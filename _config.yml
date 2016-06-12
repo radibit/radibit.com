@@ -1,0 +1,9 @@
+# Site settings
+title: Radimir Bitsov
+description: 'My personal web space'
+url: 'http://radibit.com'
+twitter_username: radibit
+github_username:  radibit
+
+# Build settings
+markdown: kramdown
