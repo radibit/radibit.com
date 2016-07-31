@@ -1,0 +1,13 @@
+.c-profileImg {
+	max-width : 12em;
+	margin : 1em;
+  -webkit-clip-path : polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	clip-path : polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	transition : 1s;
+
+  &:hover {
+    -webkit-clip-path : polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path : polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius : 50%;
+  }
+}
