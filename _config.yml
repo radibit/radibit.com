@@ -5,5 +5,11 @@ url: 'http://radibit.com'
 twitter_username: radibit
 github_username:  radibit
 
+# Exclude
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js
+
 # Build settings
 markdown: kramdown

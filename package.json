@@ -1,0 +1,20 @@
+{
+  "name": "radibit.com",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "scripts": {
+    "watch": "gulp watch"
+  },
+  "repository": "radibit/radibit.com",
+  "author": "Radimir Bitsov <radimir.bitsov@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7"
+  }
+}
