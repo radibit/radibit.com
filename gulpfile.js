@@ -14,7 +14,7 @@ const scssFiles = '_sass/*.scss';
  * Style compile and concatenate task
  */
 gulp.task( 'css', () => {
-  return gulp.src( scssFiles )
+  return gulp.src( '_sass/main.scss' )
     .pipe( sass() )
     .pipe( concat( 'main.css' ) )
     .pipe( autoprefixer( {

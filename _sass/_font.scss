@@ -1,0 +1,12 @@
+/* Font */
+@font-face {
+    font-family: 'Affogato-Regular';
+    src: url('../fonts/Affogato-Regular.eot');
+    src: url('../fonts/Affogato-Regular.eot?#iefix') format('embedded-opentype'),
+    	 url('../fonts/Affogato-Regular.woff') format('woff'),
+         url('../fonts/Affogato-Regular.woff2') format('woff2'),
+         url('../fonts/Affogato-Regular.ttf')  format('truetype'),
+         url('../fonts/Affogato-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

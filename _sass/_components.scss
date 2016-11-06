@@ -1,0 +1,52 @@
+.c-profileImg {
+	max-width : 10em;
+	margin : 1em 1em 0;
+	clip-path  : polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	transition : 1s;
+
+  &:hover {
+    clip-path : polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius : 50%;
+		border : .25em solid #f3f1f1;
+  }
+}
+
+.c-heart {
+	font-size : 20px;
+	color : $textRed;
+}
+
+.c-glitch {
+  font-size : 1.6em;
+  text-decoration : none;
+	position : relative;
+	color : $textBlack;
+
+  &:before,
+  &:after {
+    display : block;
+    content : 'RB';
+    position : absolute;
+    top : 0;
+    left : 0;
+    height : 100%;
+    width : 100%;
+    opacity : .7;
+  }
+  &:after {
+    color : #f0f;
+    z-index : -2;
+  }
+  &:before {
+    color : #0ff;
+    z-index : -1;
+  }
+  &:hover {
+    &:before {
+      animation : glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite;
+    }
+    &:after {
+      animation : glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+    }
+  }
+}

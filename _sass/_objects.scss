@@ -9,3 +9,11 @@
     font-weight : 400;
   }
 }
+
+.o-line {
+  padding    : 0;
+  border     : none;
+  border-top : 3px solid $textBlack;
+  margin     : 1.25em auto;
+  max-width  : 10em;
+}

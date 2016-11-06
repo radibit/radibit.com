@@ -1,0 +1,46 @@
+/* Main */
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  position   : relative;
+}
+
+body {
+  color       : $textBlack;
+  font-family : 'Affogato-Regular', sans-serif;
+  font-size   : calc( 1em + 1vw );
+}
+
+.teaser {
+  min-height : 100vh;
+  max-width  : 100vw;
+  overflow-x : hidden;
+
+  background-color : $lightGrey;
+  border-top : 1em solid $lightSkyBlue;
+}
+
+.intro-text {
+  p {
+    font-size : 1.25em;
+  }
+}
+
+.info {
+  max-width  : 30em;
+  text-align : left;
+  line-height : 1.5;
+
+  > p {
+    margin-bottom : 1em;
+  }
+
+  a {
+    color : $textBlack;
+
+    &:hover {
+      color : $textRed;
+    }
+  }
+}
