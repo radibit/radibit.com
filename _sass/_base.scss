@@ -7,7 +7,7 @@
 }
 
 body {
-  color       : $textBlack;
+  color       : $peacock;
   font-family : 'Affogato-Regular', sans-serif;
   font-size   : calc( 1em + 1vw );
 }
@@ -17,8 +17,8 @@ body {
   max-width  : 100vw;
   overflow-x : hidden;
 
-  background-color : $lightGrey;
-  border-top : 1em solid $lightSkyBlue;
+  background-color : $cotton;
+  border-top : 1em solid $redapple;
 }
 
 .intro-text {
@@ -37,10 +37,10 @@ body {
   }
 
   a {
-    color : $textBlack;
+    color : $peacock;
 
     &:hover {
-      color : $textRed;
+      color : $redapple;
     }
   }
 }
