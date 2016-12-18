@@ -1,46 +1,19 @@
 /* Main */
 * {
-  margin     : 0;
-  padding    : 0;
-  box-sizing : border-box;
-  position   : relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
 }
 
 body {
-  color       : $peacock;
-  font-family : 'Affogato-Regular', sans-serif;
-  font-size   : calc( 1em + 1vw );
-}
+  color: $peacock;
+  font-family: 'Affogato-Regular', sans-serif;
+  font-size: calc( 1em + 1vw );
+  
+  background-color: $cotton;
+  border-top: 1rem solid $redapple;
 
-.teaser {
-  min-height : 100vh;
-  max-width  : 100vw;
-  overflow-x : hidden;
-
-  background-color : $cotton;
-  border-top : 1em solid $redapple;
-}
-
-.intro-text {
-  p {
-    font-size : 1.25em;
-  }
-}
-
-.info {
-  max-width  : 30em;
-  text-align : left;
-  line-height : 1.5;
-
-  > p {
-    margin-bottom : 1em;
-  }
-
-  a {
-    color : $peacock;
-
-    &:hover {
-      color : $redapple;
-    }
-  }
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

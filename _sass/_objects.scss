@@ -1,19 +1,21 @@
 .o-headline {
   &-1 {}
   &-2 {
-    font-size : 1.5em;
-    font-weight : 600;
+    font-size: 1.5em;
+    font-weight: 600;
   }
   &-3 {
-    font-size : 1.25em;
-    font-weight : 400;
+    font-size: 1.25em;
+    font-weight: 400;
   }
 }
 
 .o-line {
-  padding    : 0;
-  border     : none;
-  border-top : 3px solid $peacock;
-  margin     : 1.25em auto;
-  max-width  : 10em;
+  border: none;
+  border-top: 3px solid $peacock;
+
+  padding: 0;
+  margin: 1.25em auto;
+
+  max-width: 10em;
 }
