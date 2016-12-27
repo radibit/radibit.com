@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My personal website.",
   "scripts": {
-    "watch": "gulp watch"
+    "dev": "gulp watch"
   },
   "repository": "radibit/radibit.com",
   "author": "Radimir Bitsov <radimir.bitsov@gmail.com>",
