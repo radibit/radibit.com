@@ -11,9 +11,24 @@ body {
   font-family: 'Affogato-Regular', sans-serif;
   font-size: calc( 1em + 1vw );
 
-  background-color: $cotton;
+  background-color: $white;
   border-top: 1rem solid $redapple;
 
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+// Temp WIP
+#board {
+  height : 15em;
+  width : 100%;
+}
+
+#space-dots {
+  position : relative;
+
+  width  : 100%;
+  height : 100%;
+
+  overflow : hidden;
 }

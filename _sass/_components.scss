@@ -1,3 +1,29 @@
+.c-navigation {
+	display: flex;
+	padding: $marginNormal $marginLarge;
+
+	&__menu {
+		list-style: none;
+
+		li {
+			padding-left: $marginNormal;
+			display: inline;
+
+			font-size: .8em;
+
+			a {
+				text-decoration: none;
+				color: $black;
+
+				&:hover,
+				&:active {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
 .c-teaser {
 	max-width: 30em;
 	margin: 0 auto;
