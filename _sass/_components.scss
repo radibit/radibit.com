@@ -1,6 +1,6 @@
 .c-navigation {
 	display: flex;
-	padding: $marginNormal $marginLarge;
+	padding: $marginNormal;
 
 	&__menu {
 		list-style: none;
@@ -52,9 +52,9 @@
 }
 
 .c-glitch {
-  font-size: 1.6em;
   text-decoration: none;
 	position: relative;
+	font-size: 1.6em;
 	color: $peacock;
 
   &:before,
@@ -62,7 +62,7 @@
     display: block;
     content: 'RB';
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 0;
     height: 100%;
     width: 100%;
@@ -71,19 +71,17 @@
   &:after {
     color: #f0f;
     z-index: -2;
-		animation: glitch 3s cubic-bezier(.25, .46, .45, .94) both infinite;
   }
   &:before {
     color: #0ff;
     z-index: -1;
-		animation: glitch 3s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
   }
   &:hover {
     &:before {
-      animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite;
+      animation: glitch 1s cubic-bezier(.25, .46, .45, .94) both infinite;
     }
     &:after {
-      animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+      animation: glitch 1s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
     }
   }
 }

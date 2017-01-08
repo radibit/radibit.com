@@ -12,14 +12,29 @@ body {
   font-size: calc( 1em + 1vw );
 
   background-color: $white;
-  border-top: 1rem solid $redapple;
 
+  // todo remove
+  border-top: 1rem solid $redapple;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-// Temp WIP
-#board {
+.frontpage-header {
+  color: $white;
+  z-index: 2;
+  pointer-events: none;
+  height: 15em;
+  padding: $marginNormal;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frontpage-space {
+  position: absolute;
+  top: 0;
   height : 15em;
   width : 100%;
 }
