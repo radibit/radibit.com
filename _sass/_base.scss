@@ -8,8 +8,9 @@
 
 body {
   color: $peacock;
-  font-family: 'Affogato-Regular', sans-serif;
+  font-family: 'VarelaRound-Regular', sans-serif;
   font-size: calc( 1em + 1vw );
+  -webkit-font-smoothing: antialiased;
 
   background-color: $white;
 
@@ -17,26 +18,6 @@ body {
   border-top: 1rem solid $redapple;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.frontpage-header {
-  color: $white;
-  z-index: 2;
-  pointer-events: none;
-  height: 15em;
-  padding: $marginNormal;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.frontpage-space {
-  position: absolute;
-  top: 0;
-  height : 15em;
-  width : 100%;
 }
 
 #space-dots {

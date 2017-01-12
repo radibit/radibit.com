@@ -1,5 +1,6 @@
 .c-navigation {
 	display: flex;
+	align-items: center;
 	padding: $marginNormal;
 
 	&__menu {
@@ -27,6 +28,7 @@
 .c-teaser {
 	max-width: 30em;
 	margin: 0 auto;
+	font-family: 'Affogato-Regular', sans-serif;
 
 	&__info {
 		text-align: left;
@@ -54,7 +56,9 @@
 .c-glitch {
   text-decoration: none;
 	position: relative;
-	font-size: 1.6em;
+	font-size: 1.4em;
+	// font-size: 1.2em;
+	font-weight: 600;
 	color: $peacock;
 
   &:before,
@@ -62,6 +66,7 @@
     display: block;
     content: 'RB';
     position: absolute;
+    // top: 0;
     top: 3px;
     left: 0;
     height: 100%;
@@ -84,4 +89,27 @@
       animation: glitch 1s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
     }
   }
+}
+
+.c-frontpage {
+	&__header {
+		font-family: 'Affogato-Regular', sans-serif;
+		color: $white;
+	  z-index: 2;
+	  pointer-events: none;
+	  height: 15em;
+	  padding: $marginNormal;
+
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+	&__space {
+		position: absolute;
+	  top: 0;
+	  height: 15em;
+	  width: 100%;
+	}
 }
