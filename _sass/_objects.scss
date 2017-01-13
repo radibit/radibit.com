@@ -24,3 +24,14 @@
   max-width: 50rem;
   margin: 0 auto;
 }
+
+.o-footer {
+  border-top: 2px solid $peacock;
+  padding: 1em 0;
+  margin-top: 1em;
+  text-align: center;
+
+  &__links {
+    margin-bottom: .5em;
+  }
+}
