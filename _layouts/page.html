@@ -1,13 +1,20 @@
 ---
 layout: default
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+<article class="o-page">
+
+  <header class="u-marginBottomNormal">
+    <h1 class="o-page__title">
+      {% if page.displayTitle %}
+        {{ page.displayTitle }}
+      {% else %}
+        {{ page.title | widont }}
+      {% endif %}
+    </h1>
   </header>
 
-  <div class="post-content">
+  <div class="o-page__content">
     {{ content }}
   </div>
 

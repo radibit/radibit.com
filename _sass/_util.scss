@@ -2,12 +2,8 @@
   text-align: center;
 }
 
-.u-paddingHorizontal {
-  padding: 0 1em;
-}
-
 .u-marginSmallVertical {
-  margin: .5em 0;
+  margin: $marginSmall 0;
 }
 
 .u-marginLeftAuto {
@@ -16,4 +12,16 @@
 
 .u-noMargin {
   margin: 0;
+}
+
+.u-marginBottomNormal {
+  margin-bottom: $marginNormal;
+}
+
+.u-displayFlex {
+  display: flex;
+}
+
+.u-justifyContentBetween {
+  justify-content: space-between;
 }
