@@ -54,6 +54,13 @@ If you haven't found it yet, keep looking. Don't settle.
 As with all matters of the heart, you'll know when you find it.
 
 
+## Images
+
+This is an example of an image.
+
+![Coast](/uploads/2017/01/coast.jpg){:class="o-img"}
+
+
 ## Bulleted Lists
 
 - Bulleted lists look like this.
