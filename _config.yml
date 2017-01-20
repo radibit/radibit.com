@@ -10,6 +10,11 @@ exclude:
   - package.json
   - node_modules
   - gulpfile.js
+  - Gemfile
+  - Gemfile.lock
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jemoji
