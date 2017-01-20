@@ -16,10 +16,15 @@ If you are not familiar with this concept or want to learn more, check the follo
 
 ## Colors
 
-<div class="u-displayFlex u-justifyContentBetween">
+<div class="u-displayFlex u-justifyContentBetween u-marginBottomNormal">
 	<span class="o-color-preview o-color-preview--redapple">Redapple</span>
 	<span class="o-color-preview o-color-preview--peacock">Peacock</span>
 	<span class="o-color-preview o-color-preview--smoke">Smoke</span>
+</div>
+<div class="u-displayFlex u-justifyContentBetween">
+	<span class="o-color-preview o-color-preview--lake">Lake</span>
+	<span class="o-color-preview o-color-preview--grass">Grass</span>
+	<span class="o-color-preview o-color-preview--fox">Fox</span>
 </div>
 
 

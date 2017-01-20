@@ -127,7 +127,7 @@
 
 .c-teaser {
 	font-family: 'Affogato-Regular', sans-serif;
-	padding: 2rem 0;
+	padding: $marginLarge 0;
 
 	&__header {
 		> p {
@@ -139,7 +139,6 @@
 		text-align: left;
 
 	  > p {
-	    margin-bottom: 1em;
 			font-size: 1.25rem;
 			line-height: 1.75rem;
 	  }
@@ -165,5 +164,53 @@
 		padding: 0 1em;
 	  background-color: $redapple;
 	  color: $white;
+	}
+}
+
+.c-featuredList {
+	list-style: none;
+	padding-left: 0;
+
+	> li {
+		position: relative;
+		padding-left: $baseline;
+		margin-bottom: $marginNormal;
+
+		&:before {
+			content: '';
+			width: .65em;
+		  height: .65em;
+		  border-radius: 10em;
+		  background-color: $grass;
+		  position: absolute;
+		  left: 0;
+		  top: 50%;
+		  transform: translateY(-50%);
+		  transition: all .25s ease-in-out;
+		}
+
+		&:hover {
+			&:before {
+				border-radius: 1em;
+			  top: 0;
+			  height: 100%;
+				transform: translateY(0%);
+			}
+		}
+	}
+
+	h3 {
+		margin-top: $marginLarge;
+		margin-bottom: $marginSmall;
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+
+		&:hover,
+		&:active {
+			color: $peacock;
+		}
 	}
 }
