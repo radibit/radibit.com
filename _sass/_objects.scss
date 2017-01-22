@@ -29,7 +29,13 @@
 }
 
 .o-img {
-  width: 100%;
+  max-width: 100%;
+
+  &--roundedSmall {
+    max-width: 10em;
+    max-height: 10em;
+    border-radius: 50%;
+  }
 }
 
 .o-color-preview {
