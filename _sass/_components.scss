@@ -16,10 +16,14 @@
 
 				&:hover,
 				&:active {
-					text-decoration: underline;
+					border-bottom: 2px solid $peacock;
 				}
 			}
 		}
+	}
+
+	&__active {
+		border-bottom: 2px solid $peacock;
 	}
 }
 
