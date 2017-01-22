@@ -107,7 +107,7 @@ function helloWorld(param1, param2) {
 
 {% highlight css linenos %}
 
-.o-hello-world {
+.o-helloWorld {
   background-color: #bcbcbc;
 
   font-size: 1.5rem;
@@ -118,7 +118,7 @@ function helloWorld(param1, param2) {
   position: relative;
 }
 
-.o-hello-world:hover {
+.o-helloWorld:hover {
   transform: rotate(180deg);
 }
 

@@ -32,7 +32,7 @@
 		color: $white;
 	  z-index: 2;
 	  pointer-events: none;
-	  height: 20rem;
+	  height: 22rem;
 	  padding: $baseline;
 
 	  display: flex;
@@ -53,7 +53,7 @@
 	&__space {
 		position: absolute;
 	  top: 0;
-	  height: 20rem;
+	  height: 22rem;
 	  width: 100%;
 	}
 }
@@ -168,20 +168,23 @@
 }
 
 .c-featuredList {
+	display: flex;
+	flex-direction: column;
 	list-style: none;
 	padding-left: 0;
 
 	> li {
 		position: relative;
 		padding-left: $baseline;
-		margin-bottom: $marginNormal;
+		margin-bottom: $marginLarge;
+		margin-top: $marginNormal;
 
 		&:before {
 			content: '';
 			width: .65em;
 		  height: .65em;
 		  border-radius: 10em;
-		  background-color: $grass;
+		  background-color: $lake;
 		  position: absolute;
 		  left: 0;
 		  top: 50%;
@@ -200,17 +203,18 @@
 	}
 
 	h3 {
-		margin-top: $marginLarge;
+		margin-top: 0;
+		margin-bottom: $marginSmall;
+	}
+
+	p {
 		margin-bottom: $marginSmall;
 	}
 
 	a {
-		display: block;
-		text-decoration: none;
-
 		&:hover,
 		&:active {
-			color: $peacock;
+			color: $lake;
 		}
 	}
 }
