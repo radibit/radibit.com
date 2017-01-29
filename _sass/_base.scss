@@ -29,7 +29,6 @@ p {
 
 a {
   color : $peacock;
-  
 
   &:hover,
   &:active {
@@ -39,6 +38,11 @@ a {
 
 ul, ol {
   padding-left: $marginNormal;
+  margin-bottom: $baseline;
+
+  ul, ol {
+    margin-bottom: 0;
+  }
 }
 
 h1,

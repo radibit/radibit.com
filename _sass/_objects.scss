@@ -36,6 +36,16 @@
     max-height: 10em;
     border-radius: 50%;
   }
+
+  &--center {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.o-meta {
+  font-style: italic;
+  color: $smoke;
 }
 
 .o-color-preview {

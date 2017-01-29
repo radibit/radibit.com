@@ -21,7 +21,7 @@
 
       <div class="o-container">
         <h2>Projects</h2>
-        <ul class="c-featuredList">
+        <ul class="c-featuredList c-featuredList--projects">
           <li>
             <h3>Alfred Vue</h3>
             <p>Alfred 3 workflow to search for Vue.js API references on vuejs.org</p>
@@ -55,7 +55,16 @@
         </ul>
 
         <h2>Articles</h2>
-        <p>Coming soon :smiley:</p>
+        <ul class="c-featuredList c-featuredList--articles">
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">
+                <h3>{{ post.title }}</h3>
+                <span class="o-meta">{{ post.date | date: "%A %-d %B %Y" }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </main>
 

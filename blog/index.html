@@ -5,6 +5,13 @@ is-nav-item: true
 order: 3
 ---
 
-<p>
-  Coming soon :smiley:
-</p>
+<ul class="c-featuredList c-featuredList--articles">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">
+        <h3>{{ post.title }}</h3>
+        <span class="o-meta">{{ post.date | date: "%A %-d %B %Y" }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

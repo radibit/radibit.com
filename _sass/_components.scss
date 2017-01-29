@@ -188,7 +188,7 @@
 			width: .65em;
 		  height: .65em;
 		  border-radius: 10em;
-		  background-color: $lake;
+			background-color: $lake;
 		  position: absolute;
 		  left: 0;
 		  top: 50%;
@@ -204,6 +204,42 @@
 				transform: translateY(0%);
 			}
 		}
+
+		> a {
+			text-decoration: none;
+		}
+	}
+
+	&--articles {
+		> li {
+			&:before {
+				background-color: $fox;
+			}
+		}
+
+		a {
+			display: block;
+
+			&:hover,
+			&:active {
+				color: $fox;
+			}
+		}
+	}
+
+	&--projects {
+		> li {
+			&:before {
+				background-color: $lake;
+			}
+		}
+
+		a {
+			&:hover,
+			&:active {
+				color: $lake;
+			}
+		}
 	}
 
 	h3 {
@@ -213,12 +249,5 @@
 
 	p {
 		margin-bottom: $marginSmall;
-	}
-
-	a {
-		&:hover,
-		&:active {
-			color: $lake;
-		}
 	}
 }
