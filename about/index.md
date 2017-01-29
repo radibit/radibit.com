@@ -14,7 +14,7 @@ sport and music. I'm intrigued by the ability to create interactive and responsi
 web applications and tools.
 
 Follower of the clean, intuitive and engaging UI / UX standarts. As a self-learner
-I'm looking everyday to expand and share my knowladge and skills.
+I'm looking everyday to expand and share my knowledge and skills.
 
 I’m currently living and working in Berlin as a front-end engineer for
 [Junomedical](http://www.junomedical.com/en).
@@ -24,5 +24,5 @@ You can take a look at my [résumé](https://www.dropbox.com/s/rymb4ddf22rpdho/R
 
 I <span class="c-heart">❤︎</span> spending my time working on side projects in
 [GitHub](https://github.com/radibit) and [Codepen](https://codepen.io/_rbit/),
-[Tweeting](https://twitter.com/radibit) and listening
+[Tweeting](https://twitter.com/radibit) and listening to
 [Music](https://play.spotify.com/user/radimir.bitsov/playlist/0sxE6ypafdZWLL1eiuN3ZZ).
