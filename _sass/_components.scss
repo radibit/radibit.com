@@ -252,3 +252,27 @@
 		margin-bottom: $marginSmall;
 	}
 }
+
+.c-share {
+	&__btn {
+		padding: $marginSmall / 2 $marginSmall;
+		text-decoration: none;
+		color: $white;
+		border-radius: .25em;
+		display: inline-block;
+
+		&:hover,
+		&:active {
+			color: $white;
+		}
+
+		&--twitter {
+			background-color: #55acee;
+
+			&:hover,
+			&:active {
+				background-color: #66bdff;
+			}
+		}
+	}
+}
