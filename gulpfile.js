@@ -6,6 +6,7 @@ const gutil = require('gulp-util');
 const sass = require('gulp-sass');
 const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
+const hash = require('gulp-hash');
 
 const siteRoot = '_site';
 const scssFiles = '_sass/*.scss';
@@ -26,7 +27,10 @@ gulp.task('css', () => {
         removeAll: true
       }
     }))
-    .pipe(gulp.dest('./assets/css'));
+    .pipe(hash())
+    .pipe(gulp.dest('./assets/css'))
+    .pipe(hash.manifest('hash.json'))
+    .pipe(gulp.dest('_data/css'));
 });
 
 /**
