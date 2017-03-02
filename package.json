@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "My personal website.",
   "scripts": {
-    "dev": "gulp watch"
+    "dev": "gulp watch",
+    "build": "jekyll build"
   },
   "repository": "radibit/radibit.com",
   "author": "Radimir Bitsov <radimir.bitsov@gmail.com>",
