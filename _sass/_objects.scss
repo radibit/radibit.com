@@ -11,6 +11,8 @@
 .o-container {
   max-width: 38rem;
   margin: 0 auto;
+  padding-left: $baseline;
+  padding-right: $baseline;
 }
 
 .o-logo {

@@ -29,7 +29,10 @@ gulp.task('css', () => {
     }))
     .pipe(hash())
     .pipe(gulp.dest('./assets/css'))
-    .pipe(hash.manifest('hash.json'))
+    .pipe(hash.manifest('hash.json', {
+      deleteOld: true,
+      sourceDir: __dirname + '/assets/css'
+    }))
     .pipe(gulp.dest('_data/css'));
 });
 

@@ -1207,9 +1207,9 @@ gulp-cssnano@^2.1.2:
     object-assign "^4.0.1"
     vinyl-sourcemaps-apply "^0.2.1"
 
-gulp-hash@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/gulp-hash/-/gulp-hash-4.0.1.tgz#da6d6ef94653595aeda2f7788304bd1b7a4ddbcc"
+gulp-hash@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-hash/-/gulp-hash-4.1.0.tgz#8027fb6dfde04f6e948a2ad4d770c596cdca45b2"
   dependencies:
     es6-promise "^2.1.1"
     gulp-util "^2.2.17"
