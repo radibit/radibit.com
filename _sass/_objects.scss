@@ -17,6 +17,13 @@
 
 .o-logo {
   font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    animation: coolor 2s infinite;
+  }
 }
 
 .o-page {

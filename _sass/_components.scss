@@ -85,52 +85,6 @@
 	color: $redapple;
 }
 
-.c-glitch {
-  text-decoration: none;
-	position: relative;
-	font-weight: 600;
-	color: $peacock;
-
-  &:before,
-  &:after {
-    display: block;
-    content: 'RB';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: .7;
-  }
-  &:after {
-    color: #f0f;
-    z-index: -2;
-  }
-  &:before {
-    color: #0ff;
-    z-index: -1;
-  }
-  &:hover {
-		color: $peacock;
-
-    &:before {
-      animation: glitch .5s cubic-bezier(.25, .46, .45, .94) both infinite;
-    }
-    &:after {
-      animation: glitch .5s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
-    }
-  }
-
-	&--teaser {
-		font-size: 4rem;
-
-		&:before,
-	  &:after {
-	    top: 1.45rem;
-	  }
-	}
-}
-
 .c-teaser {
 	font-family: 'Affogato-Regular', sans-serif;
 	padding: $marginLarge 0;
