@@ -9,11 +9,10 @@ order: 2
   <img src="/uploads/2017/01/profile.jpg" alt="Profile" class="o-img--roundedSmall">
 </p>
 
-Hi there, my name is Radimir Bitsov. I'm a web developer with a passion for technology,
-sport and music. I'm intrigued by the ability to create interactive and responsive
-web applications and tools.
+Hi there, my name is Radimir Bitsov. I'm a front-end developer with a passion for web performance and accessibility.
+I'm intrigued by the ability to create fast, responsive web applications and tools.
 
-Follower of the clean, intuitive and engaging UI / UX standarts. As a self-learner
+Follower of the clean, intuitive, and engaging UI / UX standards. As a self-learner
 I'm looking everyday to expand and share my knowledge and skills.
 
 I’m currently living and working in Berlin as a front-end engineer for
