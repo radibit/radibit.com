@@ -19,7 +19,7 @@ I’m currently living and working in Berlin as a front-end engineer for
 [Junomedical](http://www.junomedical.com/en).
 Previously, I worked for [Loopline Systems](http://www.loopline-systems.com/en),
 [Tumba Solutions](http://tumba.solutions/) and [ICB](http://www.icb.bg/).
-You can take a look at my [résumé](https://www.dropbox.com/s/rymb4ddf22rpdho/Radimir.Bitsov_Resume.pdf?dl=0).
+You can take a look at my [résumé](https://www.dropbox.com/s/vosnjb7xu0fej7o/Resume.pdf?dl=0).
 
 I <span class="c-heart">❤︎</span> spending my time working on side projects in
 [GitHub](https://github.com/radibit) and [Codepen](https://codepen.io/_rbit/),
