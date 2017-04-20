@@ -26,7 +26,8 @@ p {
 }
 
 a {
-  color : $peacock;
+  color: $peacock;
+  text-decoration-skip: ink;
 
   &:hover,
   &:active {
