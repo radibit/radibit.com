@@ -8,10 +8,17 @@ order: 3
 <ul class="c-featuredList c-featuredList--articles">
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">
-        <h3>{{ post.title }}</h3>
-        <span class="o-meta">{{ post.date | date: "%A %-d %B %Y" }}</span>
-      </a>
+      {% if post.external_url %}
+        <a href="{{ post.external_url }}">
+          <h3>{{ post.title }}</h3>
+          <span class="o-meta">{{ post.date | date: "%A %-d %B %Y" }}</span>
+        </a>
+      {% else %}
+        <a href="{{ post.url }}">
+          <h3>{{ post.title }}</h3>
+          <span class="o-meta">{{ post.date | date: "%A %-d %B %Y" }}</span>
+        </a>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
