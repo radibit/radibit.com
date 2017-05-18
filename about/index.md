@@ -22,6 +22,6 @@ Previously, I worked for [Loopline Systems](http://www.loopline-systems.com/en),
 You can take a look at my [résumé](https://www.dropbox.com/s/vosnjb7xu0fej7o/Resume.pdf?dl=0).
 
 I <span class="c-heart">❤︎</span> spending my time working on side projects in
-[GitHub](https://github.com/radibit) and [Codepen](https://codepen.io/_rbit/),
+[GitHub](https://github.com/radibit) and [Codepen](https://codepen.io/radibit/),
 [Tweeting](https://twitter.com/radibit) and listening to
 [Music](https://play.spotify.com/user/radimir.bitsov/playlist/0sxE6ypafdZWLL1eiuN3ZZ).
