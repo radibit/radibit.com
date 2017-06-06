@@ -66,6 +66,31 @@ This is an example of an image.
 ![Coast](/uploads/2017/01/coast.jpg){:class="o-img"}
 
 
+## Slide Variations
+
+<article class="c-slide">
+	<picture class="c-slide__image">
+		<source type="image/webp" srcset="/uploads/2017/06/images.002.webp">
+		<img src="/uploads/2017/06/images.002.jpg">
+	</picture>
+	<div class="c-slide__annotations">
+		Hi there! My name is Radimir and I'm front-end developer with a passion for
+		web performance, accessibility, and interface animation.
+	</div>
+</article>
+
+<article class="c-slide">
+	<video class="c-slide__image" controls preload="metadata" src="/uploads/2017/06/videos.001.mp4">
+		Sorry, your browser doesn't support embedded videos. Try
+		<a href="/uploads/2017/06/videos.001.mp4">downloading it</a>
+		instead.
+	</video>
+	<div class="c-slide__annotations">
+		Sometimes we're using clocks for creating art installations. For example this beautiful
+		clock made out of smaller clocks created by Humans Since 1982.
+	</div>
+</article>
+
 ## Bulleted Lists
 
 - Bulleted lists look like this.

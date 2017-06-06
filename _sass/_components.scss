@@ -231,3 +231,41 @@
 		}
 	}
 }
+
+.c-slide {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: $marginNormal 0;
+	margin-bottom: $baseline;
+
+	&__image {
+		width: 100%;
+	}
+
+	&__annotations {
+		margin-top: $marginNormal;
+		width: 100%;
+	}
+
+	img, video {
+		max-width: 100%;
+		display: block;
+	}
+}
+
+@media (min-width: 600px) {
+	.c-slide {
+		flex-direction: row;
+
+		&__image {
+			width: 60%;
+		}
+
+		&__annotations {
+			padding-left: $marginNormal;
+			margin-top: 0;
+			width: 40%;
+		}
+	}
+}
