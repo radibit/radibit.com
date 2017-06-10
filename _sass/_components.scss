@@ -241,6 +241,7 @@
 
 	&__image {
 		width: 100%;
+		border: 1px solid $peacock;
 	}
 
 	&__annotations {
@@ -258,14 +259,28 @@
 	.c-slide {
 		flex-direction: row;
 
+		&--large {
+			flex-direction: column;
+		}
+
 		&__image {
 			width: 60%;
+
+			.c-slide--large & {
+				width: 100%;
+			}
 		}
 
 		&__annotations {
 			padding-left: $marginNormal;
 			margin-top: 0;
 			width: 40%;
+
+			.c-slide--large & {
+				width: 100%;
+				margin-top: $marginNormal;
+				padding-left: 0;
+			}
 		}
 	}
 }
