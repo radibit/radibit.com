@@ -11,12 +11,12 @@ order: 3
       {% if post.external_url %}
         <a href="{{ post.external_url }}">
           <h3>{{ post.title }}</h3>
-          <span class="o-meta">{{ post.date | date: "%A %-d %B %Y" }}</span>
+          <span class="o-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
         </a>
       {% else %}
         <a href="{{ post.url }}">
           <h3>{{ post.title }}</h3>
-          <span class="o-meta">{{ post.date | date: "%A %-d %B %Y" }}</span>
+          <span class="o-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
         </a>
       {% endif %}
     </li>
