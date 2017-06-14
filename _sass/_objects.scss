@@ -34,6 +34,10 @@
     text-align: center;
 
     margin-bottom: 3rem;
+
+    .o-page--post & {
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -55,6 +59,8 @@
 .o-meta {
   font-style: italic;
   color: $smoke;
+  font-size: 14px;
+  margin-bottom: 3rem;
 }
 
 .o-color-preview {
