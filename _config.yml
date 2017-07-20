@@ -12,9 +12,10 @@ exclude:
   - gulpfile.js
   - Gemfile
   - Gemfile.lock
+  - vendor
 
 # Build settings
 markdown: kramdown
 
-gems:
+plugins:
   - jemoji

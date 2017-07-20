@@ -40,7 +40,7 @@ gulp.task('css', () => {
  * Run Jekyll build task as child process
  */
 gulp.task('jekyll', () => {
-  const jekyll = child.spawn('jekyll', [ 'build', '--watch' ]);
+  const jekyll = child.spawn('bundle', ['exec', 'jekyll', 'build', '--watch']);
 
   const jekyllLogger = (buffer) => {
     buffer.toString()
