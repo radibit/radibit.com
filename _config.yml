@@ -17,5 +17,5 @@ exclude:
 # Build settings
 markdown: kramdown
 
-plugins:
+plugins_dir:
   - jemoji

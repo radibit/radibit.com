@@ -3,20 +3,20 @@ const browserSync = require('browser-sync').create();
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const gutil = require('gulp-util');
-const sass = require('gulp-sass');
+const stylus = require('gulp-stylus');
 const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
 const hash = require('gulp-hash');
 
 const siteRoot = '_site';
-const scssFiles = '_sass/*.scss';
+const stylusFiles = '_styl/*.styl';
 
 /**
  * Style compile and concatenate task
  */
 gulp.task('css', () => {
-  return gulp.src('_sass/main.scss')
-    .pipe(sass())
+  return gulp.src('_styl/main.styl')
+    .pipe(stylus())
     .pipe(concat('main.css'))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
@@ -64,7 +64,7 @@ gulp.task('serve', () => {
     }
   });
 
-  gulp.watch(scssFiles, [ 'css' ]);
+  gulp.watch(stylusFiles, [ 'css' ]);
 });
 
 /**
