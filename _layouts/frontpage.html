@@ -19,9 +19,9 @@
         </div>
       </div>
 
-      <div class="o-container">
+      <div class="o-container o-container--marginBottom">
         <h2>Projects</h2>
-        <ul class="c-featuredList c-featuredList--projects">
+        <ul class="c-featuredList c-featuredList--projects c-featuredList--noMarginBottom">
           <li>
             <h3>Battery Info</h3>
             <p>
@@ -50,22 +50,8 @@
             </div>
           </li>
           <li>
-            <h3>Alfred Vue</h3>
-            <p>Alfred 3 workflow to search for Vue.js API references on vuejs.org.</p>
-            <div>
-              <a href="https://github.com/radibit/alfred-vue">Check it out</a>
-            </div>
-          </li>
-          <li>
-            <h3>Alfred Keycode</h3>
-            <p>Alfred 3 workflow to get JavaScript keycodes.</p>
-            <div>
-              <a href="https://github.com/radibit/alfred-keycode">Check it out</a>
-            </div>
-          </li>
-          <li>
             <h3>Santa Baby Chrome Extension</h3>
-            <p>Replace every new tab with lyrics from popular Christmas songs :santa:</p>
+            <p>Replace every new tab with lyrics from popular Christmas songs 🎅</p>
             <div>
               <a href="https://chrome.google.com/webstore/detail/santa-baby/janhhfaifmcgknimjljcekkpakjnclnk">
                 Visit Chrome Web Store
@@ -79,17 +65,14 @@
               <a href="https://github.com/radibit/js-tips-slack-bot">Check it out</a>
             </div>
           </li>
-          <li>
-            <h3>Tumba Solutions</h3>
-            <p>
-              A WordPress theme for Tumba Solutions website.
-            </p>
-            <div>
-              <a href="http://tumba.solutions/">See final result</a>
-            </div>
-          </li>
         </ul>
 
+        <div class="u-marginBottomNormal">
+          <a class="o-button" href="/work">View more projects</a>
+        </div>
+      </div>
+
+      <div class="o-container">
         <h2>Articles</h2>
         <ul class="c-featuredList c-featuredList--articles">
           {% for post in site.posts %}

@@ -51,6 +51,12 @@ Third level headings are used to separate visually the sub-sections.
 [Hyperlinks](/styleguide) are underlined and colored when hovered.
 
 
+## Buttons
+<button class="o-button o-button--primary">Press button</button>
+
+[Visit Link](#){:class="o-button o-button--fox"}
+
+
 ## Quotes
 
 > Your work is going to fill a large part of your life, and the only way to be truly satisfied is

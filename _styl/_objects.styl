@@ -11,6 +11,9 @@
   padding-left: $baseline
   padding-right: $baseline
 
+  &--marginBottom
+    margin-bottom: 4rem
+
 .o-logo
   font-size: 1.5rem
   font-weight: 600
@@ -75,3 +78,33 @@
 
   &--lake
     background-color: $lake
+
+.o-button
+  font-family: 'VarelaRound-Regular', sans-serif
+  font-size: .9rem
+  padding: .75rem 1.5rem
+  display: inline-block
+  background-color: $lake
+  border: 0
+  border-radius: 30px
+  color: $white
+  cursor: pointer
+  text-decoration: none
+  line-height: normal
+
+  &:hover
+    background-color: darken($lake, 20%)
+    color: $white
+  &:active
+    box-shadow: inset 0px 3px 2px 0px darken($lake, 40%) 
+    color: $white
+
+  &--fox
+    background-color: $fox
+
+    &:hover
+      background-color: darken($fox, 20%)
+    &:active
+      box-shadow: inset 0px 3px 2px 0px darken($fox, 40%) 
+
+    
