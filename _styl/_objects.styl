@@ -49,7 +49,7 @@
 
 .o-meta
   font-style: italic
-  color: $smoke
+  color: darken($smoke, 18%)
   font-size: 15px
   margin-bottom: 3rem
 
@@ -84,9 +84,9 @@
   font-size: .9rem
   padding: .75rem 1.5rem
   display: inline-block
-  background-color: $lake
+  background-color: darken($lake, 35%)
   border: 0
-  border-radius: 30px
+  border-radius: 5px
   color: $white
   cursor: pointer
   text-decoration: none
@@ -96,15 +96,15 @@
     background-color: darken($lake, 20%)
     color: $white
   &:active
-    box-shadow: inset 0px 3px 2px 0px darken($lake, 40%) 
+    box-shadow: inset 0px 3px 2px 0px darken($lake, 35%) 
     color: $white
 
   &--fox
-    background-color: $fox
+    background-color: darken($fox, 20%)
 
     &:hover
-      background-color: darken($fox, 20%)
+      background-color: darken($fox, 10%)
     &:active
-      box-shadow: inset 0px 3px 2px 0px darken($fox, 40%) 
+      box-shadow: inset 0px 3px 2px 0px darken($fox, 25%) 
 
     
