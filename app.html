@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head>
+    {{ HEAD }}
+    <script>
+      (function() {
+        if (window.PerformanceObserver) {
+          const entryHandlers = {
+            paint: function(entry) {
+              localStorage.showLogs && console.log(
+                '%c PAINT TIMING TRACKING %c -> ' + entry.name + ' - %c' + entry.startTime,
+                'background: red; color: white; display: block;',
+                'font-style: italic;',
+                'background: white; color: red; text-decoration: underline; font-weight: bold;'
+              )
+            },
+            resource: function(entry) {
+              if (/https:\/\/cdn.contentful.com/.test(entry.name)) {
+                localStorage.showLogs && console.log(
+                  '%c API TRACKING: %c ' + entry.name + ' %c-> %c' + entry.duration,
+                  'background: blue; color: white; display: block;',
+                  '',
+                  '',
+                  'background: white; color: blue; text-decoration: underline; font-weight: bold;'
+                )
+                if (window.ga) {
+                  ga('send', {
+                    hitType: 'timing',
+                    timingCategory: 'CDA CALL',
+                    timingVar: entry.name,
+                    timingValue: entry.duration
+                  })
+                }
+              }
+            },
+            longtask: function(entry) {
+              localStorage.showLogs && console.log(
+                '%c LONG TASK TRACKING %c ->',
+                'background: green; color: white; display: block;',
+                '',
+                entry
+              )
+            }
+          };
+          (new PerformanceObserver(list => {
+            list
+              .getEntries()
+              .forEach(entry => {
+                if (entryHandlers[entry.entryType]) {
+                  entryHandlers[entry.entryType](entry)
+                }
+              })
+          })).observe({
+            entryTypes: ['resource', 'paint', 'longtask']
+          })
+        }
+      })()
+    </script>
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+</html>

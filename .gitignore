@@ -1,20 +1,17 @@
-# Ignore Jekyll generated files
-_site
-
-# Ignore caches and logs
-.sass-cache
-.bundle/
-Gemfile.lock
-
-# Ignore junk files
+# Ignore files
 .DS_Store
-
-# Ignore .jekyll-metadata (introduced by Jekyll 3.0 for incremental builds)
-.jekyll-metadata
+.vscode
 
 # Ignore npm stuff
 node_modules
 npm-debug.log
 
-# Ignore bundle stuff
-vendor
+# Ignore Nuxt generate
+dist
+
+static/sw.js
+static/workbox-sw*.js
+static/workbox-sw*.js.map
+
+# Ignore local config file
+.contentful.json

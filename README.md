@@ -2,31 +2,36 @@
 
 > My website https://radibit.com
 
-## Install
+## Used technologies
+
+- [Nuxt.js](https://nuxtjs.org/)
+- [Contentful](https://www.contentful.com/)
+- [Netlify](https://www.netlify.com/)
+
+## Install ⬇️
 
 Install project dependencies
 
 ```
-$ gem install bundler
-
-$ bundle install
-
-$ brew update && brew install yarn
-
-$ yarn
+$ npm i
 ```
 
-## Party
-
-Generate assets and watch for changes
+## Party 🤵🏻
 
 ```
-$ yarn dev
+# Serve with hot reload at localhost:0505
+$ npm run dev
 ```
 
-Build the project assets and generate the website code in the `_site` dir
-
+## Build for production and launch server 🛠️
 
 ```
-$ yarn build
+$ npm run build
+$ npm start
+```
+
+## Generate static version of the website 🐳
+
+```
+$ npm run generate
 ```

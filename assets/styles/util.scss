@@ -1,0 +1,41 @@
+.u-textAlignCenter {
+  text-align: center;
+}
+
+.u-marginVerticalNormal {
+  margin: $marginNormal 0;
+}
+
+.u-marginLeftAuto {
+  margin-left: auto;
+}
+
+.u-noMargin {
+  margin: 0;
+}
+
+.u-marginBottomNormal {
+  margin-bottom: $marginNormal;
+}
+
+.u-displayFlex {
+  display: flex;
+}
+
+.u-justifyContentBetween {
+  justify-content: space-between;
+}
+
+.u-hide {
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.u-noBorder {
+  border: 0 !important;
+}
