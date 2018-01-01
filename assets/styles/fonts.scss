@@ -1,16 +1,18 @@
 /* Fonts */
 @font-face {
     font-family: 'Affogato-Regular';
-    src: url('../fonts/Affogato-Regular.woff') format('woff'),
-         url('../fonts/Affogato-Regular.woff2') format('woff2');
+    src: url('~/fonts/Affogato-Regular.woff') format('woff'),
+         url('~/fonts/Affogato-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'VarelaRound-Regular';
-    src: url('../fonts/VarelaRound-Regular.woff') format('woff'),
-         url('../fonts/VarelaRound-Regular.woff2') format('woff2');
+    src: url('~/fonts/VarelaRound-Regular.woff') format('woff'),
+         url('~/fonts/VarelaRound-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }

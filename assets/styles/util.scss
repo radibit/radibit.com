@@ -3,7 +3,7 @@
 }
 
 .u-marginVerticalNormal {
-  margin: $marginNormal 0;
+  margin: var(--marginNormal) 0;
 }
 
 .u-marginLeftAuto {
@@ -15,7 +15,7 @@
 }
 
 .u-marginBottomNormal {
-  margin-bottom: $marginNormal;
+  margin-bottom: var(--marginNormal);
 }
 
 .u-displayFlex {

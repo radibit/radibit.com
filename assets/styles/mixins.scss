@@ -1,19 +1,18 @@
-@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
-	& {
-		@each $property in $properties {
-			#{$property}: $min-value;
+@mixin fluid-type($min-vw, $max-vw, $min-value, $max-value) {
+	$max-min-value: strip-unit($max-value - $min-value);
+  $max-min-vw: strip-unit($max-vw - $min-vw);
+
+  & {
+		font-size: $min-value;
+
+    @media screen and (min-width: $min-vw) {
+			font-size: calc(
+				(#{$min-value} + #{$max-min-value} * (calc(100vw - #{$min-vw}) /  $max-min-vw))
+			);
 		}
 
-		@media screen and (min-width: $min-vw) {
-			@each $property in $properties {
-				#{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-			}
-		}
-
-		@media screen and (min-width: $max-vw) {
-			@each $property in $properties {
-				#{$property}: $max-value;
-			}
+    @media screen and (min-width: $max-vw) {
+			font-size: $max-value;
 		}
 	}
 }

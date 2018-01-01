@@ -1,6 +1,6 @@
 .o-line {
   border: none;
-  border-top: 3px solid $peacock;
+  border-top: 3px solid var(--peacock);
 
   padding: 0;
   margin: 1.25em auto;
@@ -11,8 +11,8 @@
 .o-container {
   max-width: 42rem;
   margin: 0 auto;
-  padding-left: $baseline;
-  padding-right: $baseline;
+  padding-left: var(--baseline);
+  padding-right: var(--baseline);
 }
 
 .o-logo {
@@ -27,7 +27,7 @@
 }
 
 .o-page {
-  padding: $baseline 0;
+  padding: var(--baseline) 0;
 
   &__title {
     font-family: 'Affogato-Regular', sans-serif;
@@ -58,7 +58,7 @@
 
 .o-meta {
   font-style: italic;
-  color: $smoke;
+  color: var(--smoke);
   font-size: 15px;
   margin-bottom: 3rem;
 }
@@ -69,29 +69,29 @@
   line-height: 5em;
   border-radius: 50%;
   text-align: center;
-  color: $white;
+  color: var(--white);
 
   &--redapple {
-    background-color: $redapple;
+    background-color: (--redapple);
   }
 
   &--peacock {
-    background-color: $peacock;
+    background-color: var(--peacock);
   }
 
   &--smoke {
-    background-color: $smoke;
+    background-color: var(--smoke);
   }
 
   &--fox {
-    background-color: $fox;
+    background-color: var(--fox);
   }
 
   &--grass {
-    background-color: $grass;
+    background-color: var(--grass);
   }
 
   &--lake {
-    background-color: $lake;
+    background-color: var(--lake);
   }
 }

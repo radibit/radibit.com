@@ -1,8 +1,8 @@
 @keyframes coolor {
-  0%, 100% { color: $peacock; }
-  16%      { color: $redapple; }
-  32%      { color: $grass; }
-  48%      { color: $lake; }
-  64%      { color: $fox; }
-  80%      { color: $smoke; }
+  0%, 100% { color: var(--peacock); }
+  16%      { color: var(--redapple); }
+  32%      { color: var(--grass); }
+  48%      { color: var(--lake); }
+  64%      { color: var(--fox); }
+  80%      { color: var(--smoke); }
 }

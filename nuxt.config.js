@@ -88,9 +88,7 @@ const config = {
   ** Plugin configuration
   */
   plugins: [
-    '~plugins/contentful.js',
-    '~plugins/filters.js',
-    '~plugins/transition.js'
+    '~plugins/contentful.js'
   ],
 
   /*

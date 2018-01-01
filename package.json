@@ -4,7 +4,7 @@
   "description": "My personal website.",
   "scripts": {
     "analyze": "nuxt build --analyze",
-    "dev": "cross-env HOST=0.0.0.0 PORT=0505 nuxt",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "./scripts/generate && ./scripts/check-markup && ./scripts/create-rss-feed",
@@ -30,7 +30,6 @@
     "babel-eslint": "^8.1.0",
     "chalk": "^2.3.0",
     "contentful-management": "^4.1.2",
-    "cross-env": "^5.1.3",
     "es6-promise": "^4.2.2",
     "eslint": "^4.14.0",
     "eslint-config-standard": "^10.2.1",
