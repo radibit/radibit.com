@@ -1,37 +1,58 @@
 # radibit.com
 
-> My website https://radibit.com
+> RadiBit website https://www.radibit.com
 
 ## Used technologies
 
-- [Nuxt.js](https://nuxtjs.org/)
-- [Contentful](https://www.contentful.com/)
+- [Gatsby](https://www.gatsbyjs.org/)
 - [Netlify](https://www.netlify.com/)
 
-## Install ⬇️
+## 🛠️ Install
 
 Install project dependencies
 
-```
-$ npm i
+```sh
+npm i -g gatsby-cli
+npm i
 ```
 
-## Party 🤵🏻
+## 👷‍ Start development
 
-```
+```sh
 # Serve with hot reload at localhost:0505
-$ npm run dev
+npm run dev
 ```
 
-## Build for production and launch server 🛠️
+## 🤵 Build for production
 
-```
-$ npm run build
-$ npm start
+```sh
+npm run build
 ```
 
-## Generate static version of the website 🐳
+## 🐳 Serve the production build locally
 
+```sh
+$ npm run serve
 ```
-$ npm run generate
-```
+
+## 🧐 Configration
+
+    .
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    └── package.json
+
+1.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+
+2.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+
+3.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+
+4.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+
+5.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+6.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
