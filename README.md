@@ -1,6 +1,6 @@
 # radibit.com
 
-> RadiBit website https://www.radibit.com
+> radibit website https://www.radibit.com
 
 ## Used technologies
 
