@@ -18,7 +18,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={'RB'} />
+        <Header siteTitle={'radibit'} />
         <div
           style={{
             margin: `0 auto`,

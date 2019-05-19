@@ -1,8 +1,8 @@
-const autoprefixer = require('autoprefixer');
+const autoprefixer = require('autoprefixer')
 
 module.exports = {
   siteMetadata: {
-    title: `RadiBit`,
+    title: `radibit`,
     description: `Web performance engineering and digital accessibility consultancy.`,
     author: `@radibit`,
   },
@@ -22,7 +22,7 @@ module.exports = {
       options: {
         postCssPlugins: [
           autoprefixer({
-            browsers: ['> 5%']
+            browsers: ['> 5%'],
           }),
         ],
         precision: 8,
@@ -31,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `RadiBit`,
-        short_name: `RadiBit`,
+        name: `radibit`,
+        short_name: `radibit`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
