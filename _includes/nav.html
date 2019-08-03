@@ -2,7 +2,7 @@
   <a class="o-logo" href="{{ site.url }}">RB</a>
 
   <ul class="c-navigation__menu u-marginLeftAuto">
-    {% assign pages = site.pages | sort:"order" %}
+    {% assign pages = site.pages %}
     {% for my_page in pages %}
       {% if my_page.is-nav-item == true %}
         <li>

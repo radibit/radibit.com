@@ -1,22 +1,17 @@
 {
   "name": "radibit.com",
-  "version": "1.0.0",
-  "description": "My personal website.",
-  "scripts": {
-    "dev": "gulp watch",
-    "build": "bundle exec jekyll build"
-  },
+  "private": true,
+  "description": "A website for RadiBit Ltd.",
+  "version": "2.0.0",
   "repository": "radibit/radibit.com",
   "author": "Radimir Bitsov <radimir.bitsov@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "browser-sync": "^2.18.6",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-hash": "^4.1.0",
-    "gulp-stylus": "^2.6.0",
-    "gulp-util": "^3.0.7"
-  }
+  "scripts": {
+    "dev": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.8.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3"
+  },
+  "devDependencies": {}
 }
