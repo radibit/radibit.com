@@ -12,4 +12,4 @@ node_modules/
 .vscode
 
 # Build artefacts
-_site/
+dist/
