@@ -7,6 +7,7 @@
   "author": "Radimir Bitsov <radimir.bitsov@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "npm run dev",
     "dev": "eleventy --serve"
   },
   "dependencies": {

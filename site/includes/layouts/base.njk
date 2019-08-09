@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include components/head.html %}
+  {% include "components/head.html" %}
 
   <body>
     <a href="#main" class="c-skipLink u-visibleOnFocus">skip to content</a>
-    {% include components/nav.html %}
+    {% include "components/nav.html" %}
 
     <main id="main">
       <div class="c-frontpage">
@@ -74,26 +74,9 @@
 
       <div class="o-container">
         <h2>Articles</h2>
-        <ul class="c-featuredList c-featuredList--articles">
-          {% for post in site.posts %}
-            <li>
-              {% if post.external_url %}
-                <a href="{{ post.external_url }}">
-                  <h3>{{ post.title }}</h3>
-                  <span class="o-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-                </a>
-              {% else %}
-                <a href="{{ post.url }}">
-                  <h3>{{ post.title }}</h3>
-                  <span class="o-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-                </a>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
       </div>
     </main>
 
-    {% include components/footer.html %}
+    {% include "components/footer.html" %}
   </body>
 </html>
