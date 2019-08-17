@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if meta_title %}{{ meta_title }}{% else %}{{ title }}{% endif %} |
+      {{ site.name }}
+    </title>
+    <meta
+      name="description"
+      content="{% if meta_desc %}{{ meta_description }}{% else %}{{excerpt}}{% endif %}"
+    />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="icon" type="image/png" href="{{ site.images.favicon }}" />
+    {% if config.environment == "dev" %}
+    <link rel="stylesheet" href="/css/main.css" />
+    {% else %}
+    <link rel="stylesheet" href="/css/main.min.css" />
+    {% endif %}
+  </head>
+
+  <body>
+    <a href="#main" class="c-skipLink u-visibleOnFocus">skip to content</a>
+    {% include "components/nav.html" %}
+
+    <main id="main">
+      <div class="c-frontpage">
+        <header class="c-frontpage__header u-textAlignCenter">
+          <h1>Radimir Bitsov</h1>
+          <p>Front-end Engineer — Interaction Designer</p>
+        </header>
+      </div>
+    </main>
+
+    {% include "components/footer.html" %}
+  </body>
+</html>

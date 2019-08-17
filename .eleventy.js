@@ -3,8 +3,12 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // Layout aliases
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
-  eleventyConfig.addPassthroughCopy('site/assets');
+
+  // Passthrough copy
+  eleventyConfig.addPassthroughCopy('src/assets/fonts');
+  eleventyConfig.addPassthroughCopy('src/assets/images');
 
   return {
     templateFormats: ['md', 'njk', 'html'],
@@ -13,9 +17,8 @@ module.exports = eleventyConfig => {
     passthroughFileCopy: true,
 
     dir: {
-      input: 'site',
+      input: 'src',
       output: 'dist',
-      includes: 'includes',
     },
   };
 };
