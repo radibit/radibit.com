@@ -2,6 +2,9 @@
   "name": "radibit website",
   "shortDesc": "radibit — web accessibility and performance engineering.",
   "url": "https://radibit.com",
+  "authorEmail": "radimir.bitsov@gmail.com",
+  "authorHandle": "radibit",
+  "authorName": "Radimir Bitsov",
   "enableThirdPartyComments": false,
   "maxPostsPerPage": 5
 }

@@ -1,0 +1,28 @@
+@import '_typography.css';
+@import '_variables.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-base);
+  color: var(--c-ebony-clay);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-sans-serif);
+}

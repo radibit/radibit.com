@@ -7,12 +7,18 @@
   "author": "Radimir Bitsov <radimir.bitsov@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "ELEVENTY_ENV=dev eleventy --serve"
+    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "start": "npm run dev"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.17",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
 }

@@ -11,7 +11,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('src/assets/images');
 
   return {
-    templateFormats: ['md', 'njk', 'html'],
+    templateFormats: ['md', 'njk', 'html', '11ty.js'],
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     passthroughFileCopy: true,
