@@ -1,0 +1,8 @@
+.c-frontpage-header {
+  background-color: var(--c-primary);
+  padding: 2em;
+}
+
+.c-frontpage-header h1 {
+  color: var(--c-secondary);
+}

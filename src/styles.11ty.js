@@ -3,7 +3,7 @@ const path = require('path');
 const postcss = require('postcss');
 
 // the file name as an entry point for postcss compilation
-// the output filename in the output /styles folder.
+// the output filename in the /styles folder
 const fileName = 'main.css';
 
 module.exports = class {

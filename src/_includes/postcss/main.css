@@ -1,5 +1,6 @@
 @import '_typography.css';
 @import '_variables.css';
+@import '_components.css';
 
 *,
 *::before,
@@ -15,10 +16,10 @@ html {
 
 body {
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 1em;
   font-family: var(--font-base);
-  color: var(--c-ebony-clay);
+  color: var(--c-text);
 }
 
 h1,

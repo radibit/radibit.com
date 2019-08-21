@@ -2,6 +2,11 @@
   /* Colors */
   --c-ebony-clay: #1d2536;
   --c-persimmon: #ff6153;
+  --c-gun-poweder: #454457;
+
+  --c-primary: var(--c-ebony-clay);
+  --c-secondary: var(--c-persimmon);
+  --c-text: var(--c-gun-poweder);
 
   /* Fonts */
   --font-sans-serif: Gilroy-SemiBold, Helvetica, Arial, sans-serif;
