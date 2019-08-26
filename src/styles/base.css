@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'VarelaRound-Regular';
-  src: url('../assets/fonts/VarelaRound-Regular.woff') format('woff'),
-    url('../assets//fonts/VarelaRound-Regular.woff2') format('woff2');
-  font-weight: normal;
+  font-family: 'Gilroy-SemiBold';
+  src: url('../assets/fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('../assets//fonts/Gilroy-SemiBold.woff2') format('woff2');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -20,10 +20,9 @@ body {
   padding: 0;
 
   font-size: 110%;
-  font-family: 'VarelaRound-Regular', -apple-system, BlinkMacSystemFont,
+  font-family: -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-weight: 400;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -39,10 +38,15 @@ body {
   --color-grey: #8f9196;
 
   --default-spacing: 2rem;
+  --font-sans: Gilroy-SemiBold, Helvetica, Arial, sans-serif;
 
   --baseline: 1.5rem;
   --minScreen: 20rem;
   --maxScreen: 50rem;
   --minFont: 0.9rem;
   --maxFont: 1.125rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-sans);
 }

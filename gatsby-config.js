@@ -18,17 +18,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [
-          autoprefixer({
-            browsers: ['> 5%'],
-          }),
-        ],
-        precision: 8,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `radibit`,
