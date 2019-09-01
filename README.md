@@ -19,7 +19,7 @@ npm i
 ## 👷‍ Start development
 
 ```sh
-# Serve with hot reload at localhost:0505
+# Serve with hot reload at localhost:8000
 npm run dev
 ```
 

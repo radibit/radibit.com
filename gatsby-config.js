@@ -1,10 +1,9 @@
-const autoprefixer = require('autoprefixer')
-
 module.exports = {
   siteMetadata: {
     title: `radibit`,
-    description: `Web performance engineering and digital accessibility consultancy.`,
+    description: `Web accessibility and performance engineering.`,
     author: `@radibit`,
+    siteUrl: 'https://radibit.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,12 +22,12 @@ module.exports = {
         name: `radibit`,
         short_name: `radibit`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1D2536`,
+        theme_color: `#1D2536`,
         display: `minimal-ui`,
-        icon: `src/assets/images/icon.png`,
+        icon: `src/assets/images/icon-white.png`,
       },
     },
     `gatsby-plugin-offline`,
   ],
-}
+};

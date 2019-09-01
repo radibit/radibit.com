@@ -1,0 +1,27 @@
+.c-navigation {
+  margin-left: auto;
+}
+
+.c-navigation ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.c-navigation ul li:not(:first-of-type) {
+  margin-left: 1.5em;
+}
+
+.c-navigation a {
+  text-decoration: none;
+  font-family: var(--font-sans);
+  padding: 0.25em 0;
+  font-size: 1.125em;
+}
+
+.c-navigation a:hover,
+.c-navigation a:focus,
+.c-navigation a[aria-current='page'] {
+  color: var(--c-persimmon);
+  border-bottom: 3px solid;
+}
