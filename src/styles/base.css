@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url('../assets/fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('../assets//fonts/Gilroy-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: var(--c-text-dark);
+  background-color: var(--c-midnight-blue);
+  border: 0.75em solid white;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  /* variables */
+  --c-midnight-blue: #1d2536;
+  --c-persimmon: #ff6153;
+  --c-text-dark: #343434;
+  --c-white: #fff;
+
+  --default-spacing: 2em;
+  --font-sans: Gilroy-SemiBold, Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-sans);
+}
+
+a {
+  color: currentColor;
+}

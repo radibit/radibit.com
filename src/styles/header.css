@@ -1,0 +1,7 @@
+.c-header {
+  display: flex;
+  align-items: center;
+  background-color: var(--c-midnight-blue);
+  padding: 1.5em;
+  color: var(--c-white);
+}

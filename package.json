@@ -1,22 +1,30 @@
 {
   "name": "radibit.com",
-  "version": "1.0.0",
-  "description": "My personal website.",
-  "scripts": {
-    "dev": "gulp watch",
-    "build": "bundle exec jekyll build"
-  },
+  "private": true,
+  "description": "A website for radibit company.",
+  "version": "2.0.0",
   "repository": "radibit/radibit.com",
   "author": "Radimir Bitsov <radimir.bitsov@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "browser-sync": "^2.18.6",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-hash": "^4.1.0",
-    "gulp-stylus": "^2.6.0",
-    "gulp-util": "^3.0.7"
+  "scripts": {
+    "dev": "gatsby develop",
+    "start": "npm run dev",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "deploy": "npm run build && netlify deploy"
+  },
+  "dependencies": {
+    "gatsby": "^2.13.83",
+    "gatsby-image": "^2.2.14",
+    "gatsby-plugin-manifest": "^2.2.9",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-react-helmet": "^3.1.5",
+    "gatsby-plugin-sharp": "^2.2.18",
+    "gatsby-source-filesystem": "^2.1.18",
+    "gatsby-transformer-sharp": "^2.2.12",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1"
   }
 }
