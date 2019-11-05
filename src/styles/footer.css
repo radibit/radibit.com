@@ -1,6 +1,7 @@
 .c-footer {
   background-color: var(--c-midnight-blue);
   color: var(--c-white);
-  padding: 2em 0;
+  padding: 2em 1.5em;
   text-align: center;
+  margin-top: auto;
 }

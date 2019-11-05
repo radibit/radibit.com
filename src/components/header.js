@@ -7,7 +7,7 @@ import '../styles/header.css';
 const Header = () => (
   <header className="c-header" role="banner">
     <Logo />
-    <Nav />
+    {/* <Nav /> */}
   </header>
 );
 

@@ -18,11 +18,24 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          minHeight: 'calc(100vh - 2em)',
+        }}
+      >
         <Header />
-        <main>{children}</main>
+        <main
+          style={{
+            maxWidth: '75em',
+            margin: '0 auto',
+          }}
+        >
+          {children}
+        </main>
         <Footer />
-      </>
+      </div>
     )}
   />
 );
