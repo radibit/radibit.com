@@ -39,7 +39,7 @@ typings/
 # dotenv environment variables file
 .env
 
-# gatsby files
+# Gatsby files
 .cache/
 public
 
