@@ -13,7 +13,11 @@ const IndexPage = () => (
       keywords={[`web performance`, `accessibility`, `consultancy`]}
     />
     <header className="c-homeHeader">
-      <h1>Web accessibility and  performance engineering</h1>
+      <div>
+        <h1>Web accessibility and  performance engineering</h1>
+        <p>(comming soon)</p>
+      </div>
+
       <div style={{ textAlign: 'center' }}>
         <svg
           viewBox="0 0 352 360"
