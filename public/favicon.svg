@@ -1,0 +1,17 @@
+<svg viewBox="0 0 427 426" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path
+d="M.964 122.489v-.563L123.705.364v122.125V.364h302.532v303.147h-.3L303.496 425.636H.964V122.489z" /><g font-family="'Futura-Medium','Futura',sans-serif" font-weight="500" font-size="110.64"><text x="71.6" y="250.816">r<tspan x="112.225px 178.566px" y="250.816px 250.816px">adi
+</tspan>
+</text>
+<text x="151.419" y="375.287">
+    bit
+</text>
+</g>
+<style>
+    path { fill: #000; }
+    text, tspan { fill: #fff; }
+    @media (prefers-color-scheme: dark) {
+        path { fill: #fff; }
+        text, tspan { fill: #000; }
+    }
+</style>
+</svg>

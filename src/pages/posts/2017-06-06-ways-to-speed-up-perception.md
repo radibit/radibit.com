@@ -1,5 +1,4 @@
 ---
-layout: post
 title: What you see is faster than what you get - ways to speed up perception
 ---
 
@@ -7,8 +6,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.001.webp">
-		<img src="/_uploads/2017/06/images.001.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.001.webp">
+		<img src="/uploads/2017/06/images.001.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -22,8 +21,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.002.webp">
-		<img src="/_uploads/2017/06/images.002.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.002.webp">
+		<img src="/uploads/2017/06/images.002.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -34,8 +33,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.003.webp">
-		<img src="/_uploads/2017/06/images.003.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.003.webp">
+		<img src="/uploads/2017/06/images.003.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -46,8 +45,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.004.webp">
-		<img src="/_uploads/2017/06/images.004.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.004.webp">
+		<img src="/uploads/2017/06/images.004.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -58,8 +57,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.005.webp">
-		<img src="/_uploads/2017/06/images.005.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.005.webp">
+		<img src="/uploads/2017/06/images.005.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -69,9 +68,9 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 </article>
 
 <article class="c-slide">
-	<video class="c-slide__image" controls preload="metadata" src="/_uploads/2017/06/videos.001.mp4">
+	<video class="c-slide__image" controls preload="metadata" src="/uploads/2017/06/videos.001.mp4">
 		Sorry, your browser doesn't support embedded videos. Try
-		<a href="/_uploads/2017/06/videos.001.mp4">downloading it</a>
+		<a href="/uploads/2017/06/videos.001.mp4">downloading it</a>
 		instead.
 	</video>
 	<div class="c-slide__annotations">
@@ -83,8 +82,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.007.webp">
-		<img src="/_uploads/2017/06/images.007.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.007.webp">
+		<img src="/uploads/2017/06/images.007.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -95,8 +94,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.008.webp">
-		<img src="/_uploads/2017/06/images.008.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.008.webp">
+		<img src="/uploads/2017/06/images.008.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -107,8 +106,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide c-slide--large">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.009.webp">
-		<img src="/_uploads/2017/06/images.009.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.009.webp">
+		<img src="/uploads/2017/06/images.009.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -119,8 +118,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.010.webp">
-		<img src="/_uploads/2017/06/images.010.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.010.webp">
+		<img src="/uploads/2017/06/images.010.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -131,8 +130,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.011.webp">
-		<img src="/_uploads/2017/06/images.011.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.011.webp">
+		<img src="/uploads/2017/06/images.011.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>Great tools and resources:</p>
@@ -153,8 +152,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.012.webp">
-		<img src="/_uploads/2017/06/images.012.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.012.webp">
+		<img src="/uploads/2017/06/images.012.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -165,8 +164,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.016.webp">
-		<img src="/_uploads/2017/06/images.016.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.016.webp">
+		<img src="/uploads/2017/06/images.016.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -177,8 +176,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.017.webp">
-		<img src="/_uploads/2017/06/images.017.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.017.webp">
+		<img src="/uploads/2017/06/images.017.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -189,8 +188,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.018.webp">
-		<img src="/_uploads/2017/06/images.018.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.018.webp">
+		<img src="/uploads/2017/06/images.018.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -201,8 +200,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.019.webp">
-		<img src="/_uploads/2017/06/images.019.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.019.webp">
+		<img src="/uploads/2017/06/images.019.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -213,8 +212,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.020.webp">
-		<img src="/_uploads/2017/06/images.020.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.020.webp">
+		<img src="/uploads/2017/06/images.020.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -225,8 +224,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.021.webp">
-		<img src="/_uploads/2017/06/images.021.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.021.webp">
+		<img src="/uploads/2017/06/images.021.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -237,8 +236,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.022.webp">
-		<img src="/_uploads/2017/06/images.022.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.022.webp">
+		<img src="/uploads/2017/06/images.022.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -249,8 +248,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.023.webp">
-		<img src="/_uploads/2017/06/images.023.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.023.webp">
+		<img src="/uploads/2017/06/images.023.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -261,8 +260,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.024.webp">
-		<img src="/_uploads/2017/06/images.024.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.024.webp">
+		<img src="/uploads/2017/06/images.024.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -273,8 +272,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide c-slide--large">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.025.webp">
-		<img src="/_uploads/2017/06/images.025.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.025.webp">
+		<img src="/uploads/2017/06/images.025.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -285,8 +284,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.026.webp">
-		<img src="/_uploads/2017/06/images.026.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.026.webp">
+		<img src="/uploads/2017/06/images.026.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -299,9 +298,9 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 </article>
 
 <article class="c-slide">
-	<video class="c-slide__image u-noBorder" controls preload="metadata" src="/_uploads/2017/06/videos.002.mp4">
+	<video class="c-slide__image u-noBorder" controls preload="metadata" src="/uploads/2017/06/videos.002.mp4">
 		Sorry, your browser doesn't support embedded videos. Try
-		<a href="/_uploads/2017/06/videos.002.mp4">downloading it</a>
+		<a href="/uploads/2017/06/videos.002.mp4">downloading it</a>
 		instead.
 	</video>
 	<div class="c-slide__annotations">
@@ -313,8 +312,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.028.webp">
-		<img src="/_uploads/2017/06/images.028.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.028.webp">
+		<img src="/uploads/2017/06/images.028.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -325,8 +324,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide c-slide--large">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.029.webp">
-		<img src="/_uploads/2017/06/images.029.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.029.webp">
+		<img src="/uploads/2017/06/images.029.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -351,8 +350,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.030.webp">
-		<img src="/_uploads/2017/06/images.030.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.030.webp">
+		<img src="/uploads/2017/06/images.030.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<ul>
@@ -371,8 +370,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.035.webp">
-		<img src="/_uploads/2017/06/images.035.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.035.webp">
+		<img src="/uploads/2017/06/images.035.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -383,8 +382,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide c-slide--large">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.036.webp">
-		<img src="/_uploads/2017/06/images.036.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.036.webp">
+		<img src="/uploads/2017/06/images.036.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -398,8 +397,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.037.webp">
-		<img src="/_uploads/2017/06/images.037.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.037.webp">
+		<img src="/uploads/2017/06/images.037.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -410,8 +409,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.038.webp">
-		<img src="/_uploads/2017/06/images.038.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.038.webp">
+		<img src="/uploads/2017/06/images.038.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -422,8 +421,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.039.webp">
-		<img src="/_uploads/2017/06/images.039.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.039.webp">
+		<img src="/uploads/2017/06/images.039.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -434,8 +433,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.040.webp">
-		<img src="/_uploads/2017/06/images.040.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.040.webp">
+		<img src="/uploads/2017/06/images.040.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -446,8 +445,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.041.webp">
-		<img src="/_uploads/2017/06/images.041.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.041.webp">
+		<img src="/uploads/2017/06/images.041.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -458,8 +457,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.042.webp">
-		<img src="/_uploads/2017/06/images.042.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.042.webp">
+		<img src="/uploads/2017/06/images.042.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -470,8 +469,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.043.webp">
-		<img src="/_uploads/2017/06/images.043.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.043.webp">
+		<img src="/uploads/2017/06/images.043.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -482,8 +481,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.044.webp">
-		<img src="/_uploads/2017/06/images.044.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.044.webp">
+		<img src="/uploads/2017/06/images.044.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -494,8 +493,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.046.webp">
-		<img src="/_uploads/2017/06/images.046.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.046.webp">
+		<img src="/uploads/2017/06/images.046.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -505,9 +504,9 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 </article>
 
 <article class="c-slide">
-	<video class="c-slide__image" controls preload="metadata" src="/_uploads/2017/06/videos.003.mp4">
+	<video class="c-slide__image" controls preload="metadata" src="/uploads/2017/06/videos.003.mp4">
 		Sorry, your browser doesn't support embedded videos. Try
-		<a href="/_uploads/2017/06/videos.003.mp4">downloading it</a>
+		<a href="/uploads/2017/06/videos.003.mp4">downloading it</a>
 		instead.
 	</video>
 	<div class="c-slide__annotations">
@@ -519,8 +518,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.048.webp">
-		<img src="/_uploads/2017/06/images.048.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.048.webp">
+		<img src="/uploads/2017/06/images.048.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -530,9 +529,9 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 </article>
 
 <article class="c-slide">
-	<video class="c-slide__image" controls preload="metadata" src="/_uploads/2017/06/videos.004.mp4">
+	<video class="c-slide__image" controls preload="metadata" src="/uploads/2017/06/videos.004.mp4">
 		Sorry, your browser doesn't support embedded videos. Try
-		<a href="/_uploads/2017/06/videos.004.mp4">downloading it</a>
+		<a href="/uploads/2017/06/videos.004.mp4">downloading it</a>
 		instead.
 	</video>
 	<div class="c-slide__annotations">
@@ -545,8 +544,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.050.webp">
-		<img src="/_uploads/2017/06/images.050.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.050.webp">
+		<img src="/uploads/2017/06/images.050.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<span>
@@ -568,8 +567,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.051.webp">
-		<img src="/_uploads/2017/06/images.051.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.051.webp">
+		<img src="/uploads/2017/06/images.051.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -580,8 +579,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.052.webp">
-		<img src="/_uploads/2017/06/images.052.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.052.webp">
+		<img src="/uploads/2017/06/images.052.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -591,9 +590,9 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 </article>
 
 <article class="c-slide">
-	<video class="c-slide__image" controls preload="metadata" src="/_uploads/2017/06/videos.005.mp4">
+	<video class="c-slide__image" controls preload="metadata" src="/uploads/2017/06/videos.005.mp4">
 		Sorry, your browser doesn't support embedded videos. Try
-		<a href="/_uploads/2017/06/videos.005.mp4">downloading it</a>
+		<a href="/uploads/2017/06/videos.005.mp4">downloading it</a>
 		instead.
 	</video>
 	<div class="c-slide__annotations">
@@ -605,8 +604,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.054.webp">
-		<img src="/_uploads/2017/06/images.054.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.054.webp">
+		<img src="/uploads/2017/06/images.054.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -617,8 +616,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.055.webp">
-		<img src="/_uploads/2017/06/images.055.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.055.webp">
+		<img src="/uploads/2017/06/images.055.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -629,8 +628,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.056.webp">
-		<img src="/_uploads/2017/06/images.056.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.056.webp">
+		<img src="/uploads/2017/06/images.056.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -641,8 +640,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.057.webp">
-		<img src="/_uploads/2017/06/images.057.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.057.webp">
+		<img src="/uploads/2017/06/images.057.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -652,9 +651,9 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 </article>
 
 <article class="c-slide">
-	<video class="c-slide__image" controls preload="metadata" src="/_uploads/2017/06/videos.006.mp4">
+	<video class="c-slide__image" controls preload="metadata" src="/uploads/2017/06/videos.006.mp4">
 		Sorry, your browser doesn't support embedded videos. Try
-		<a href="/_uploads/2017/06/videos.006.mp4">downloading it</a>
+		<a href="/uploads/2017/06/videos.006.mp4">downloading it</a>
 		instead.
 	</video>
 	<div class="c-slide__annotations">
@@ -666,8 +665,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.059.webp">
-		<img src="/_uploads/2017/06/images.059.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.059.webp">
+		<img src="/uploads/2017/06/images.059.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -678,8 +677,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide c-slide--large">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.060.webp">
-		<img src="/_uploads/2017/06/images.060.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.060.webp">
+		<img src="/uploads/2017/06/images.060.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -691,8 +690,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.061.webp">
-		<img src="/_uploads/2017/06/images.061.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.061.webp">
+		<img src="/uploads/2017/06/images.061.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -703,8 +702,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.062.webp">
-		<img src="/_uploads/2017/06/images.062.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.062.webp">
+		<img src="/uploads/2017/06/images.062.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -714,9 +713,9 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 </article>
 
 <article class="c-slide">
-	<video class="c-slide__image" controls preload="metadata" src="/_uploads/2017/06/videos.007.mp4">
+	<video class="c-slide__image" controls preload="metadata" src="/uploads/2017/06/videos.007.mp4">
 		Sorry, your browser doesn't support embedded videos. Try
-		<a href="/_uploads/2017/06/videos.006.mp4">downloading it</a>
+		<a href="/uploads/2017/06/videos.006.mp4">downloading it</a>
 		instead.
 	</video>
 	<div class="c-slide__annotations">
@@ -727,9 +726,9 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 </article>
 
 <article class="c-slide">
-	<video class="c-slide__image" controls preload="metadata" src="/_uploads/2017/06/videos.008.mp4">
+	<video class="c-slide__image" controls preload="metadata" src="/uploads/2017/06/videos.008.mp4">
 		Sorry, your browser doesn't support embedded videos. Try
-		<a href="/_uploads/2017/06/videos.006.mp4">downloading it</a>
+		<a href="/uploads/2017/06/videos.006.mp4">downloading it</a>
 		instead.
 	</video>
 	<div class="c-slide__annotations">
@@ -741,8 +740,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.065.webp">
-		<img src="/_uploads/2017/06/images.065.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.065.webp">
+		<img src="/uploads/2017/06/images.065.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -752,9 +751,9 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 </article>
 
 <article class="c-slide">
-	<video class="c-slide__image" controls preload="metadata" src="/_uploads/2017/06/videos.009.mp4">
+	<video class="c-slide__image" controls preload="metadata" src="/uploads/2017/06/videos.009.mp4">
 		Sorry, your browser doesn't support embedded videos. Try
-		<a href="/_uploads/2017/06/videos.009.mp4">downloading it</a>
+		<a href="/uploads/2017/06/videos.009.mp4">downloading it</a>
 		instead.
 	</video>
 	<div class="c-slide__annotations">
@@ -766,8 +765,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.067.webp">
-		<img src="/_uploads/2017/06/images.067.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.067.webp">
+		<img src="/uploads/2017/06/images.067.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -778,8 +777,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.068.webp">
-		<img src="/_uploads/2017/06/images.068.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.068.webp">
+		<img src="/uploads/2017/06/images.068.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -790,8 +789,8 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 
 <article class="c-slide">
 	<picture class="c-slide__image">
-		<source type="image/webp" srcset="/_uploads/2017/06/images.069.webp">
-		<img src="/_uploads/2017/06/images.069.jpg">
+		<source type="image/webp" srcset="/uploads/2017/06/images.069.webp">
+		<img src="/uploads/2017/06/images.069.jpg">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
