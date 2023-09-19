@@ -1,31 +1,19 @@
 {
   "name": "radibit.com",
-  "private": true,
   "description": "A website for radibit company.",
   "version": "2.0.0",
   "repository": "radibit/radibit.com",
-  "author": "Radimir Bitsov <radimir.bitsov@gmail.com>",
+  "author": "Radimir Bitsov <contact@radibit.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop",
-    "start": "npm run dev",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
     "deploy": "npm run build && netlify deploy"
   },
   "dependencies": {
-    "gatsby": "^5.0.1",
-    "gatsby-image": "^2.2.14",
-    "gatsby-plugin-manifest": "^5.0.0",
-    "gatsby-plugin-offline": "^2.2.10",
-    "gatsby-plugin-react-helmet": "^3.1.5",
-    "gatsby-plugin-sharp": "^5.0.0",
-    "gatsby-source-filesystem": "^5.0.0",
-    "gatsby-transformer-sharp": "^5.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "astro": "^3.1.1"
   }
 }
