@@ -15,7 +15,6 @@ const IndexPage = () => (
     <header className="c-homeHeader">
       <div>
         <h1>Web accessibility and  performance engineering</h1>
-        <p>(comming soon)</p>
       </div>
 
       <div style={{ textAlign: 'center' }}>
