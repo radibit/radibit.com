@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .c-homeHeader h1 {
   margin: 0;
   max-width: 15em;
   font-size: 2.25rem;
-  padding: 1em 0 0;
 }
 
 .c-homeHeader p {
