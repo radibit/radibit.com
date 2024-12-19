@@ -14,7 +14,7 @@
     "deploy": "npm run build && netlify deploy"
   },
   "dependencies": {
-    "astro": "^4.16.17",
+    "astro": "^4.16.18",
     "css-doodle": "^0.37.2"
   }
 }
