@@ -1,5 +1,6 @@
 ---
-title: HTTPS setup for GitHub Pages using Netlify
+title: 'How to Set Up HTTPS for a Custom GitHub Pages Domain Using Netlify'
+layout: ../../layouts/BlogPost.astro
 ---
 
 Probably many of you already know that [GitHub announced last year](https://github.com/blog/2186-https-for-github-pages) HTTPS support for GitHub Pages. Of course, this is great news and kudos to the GitHub team for providing this feature. However, I found that this is applicable only for `<username>.github.io` sites, which means we need to look for alternatives to have an encrypted connection for custom domains. With this article, I would like to describe my setup and hopefully, save you some time. But first, why it matters!
@@ -8,11 +9,11 @@ Probably many of you already know that [GitHub announced last year](https://gith
 
 HTTPS (Hypertext Transfer Protocol Secure) uses a separated protocol called [TLS (Transport Layer Security)](https://hpbn.co/transport-layer-security-tls/) to ensure encrypted communication between client and server. The importance of the standard can be clearly seen by the actions of the teams behind the most popular browsers. Firefox [announced earlier this week](https://blog.mozilla.org/security/2017/01/20/communicating-the-dangers-of-non-secure-http/), that they will mark HTTP connection as not secure and will notify the visitor when it’s encrypted.
 
-![HTTPS Firefox](/uploads/2017/01/https-firefox.png){:class="o-img o-img--center"}
+![HTTPS Firefox](/uploads/2017/01/https-firefox.png)
 
 Similar notification will be introduced with the upcoming Chrome release, following [their statement](https://security.googleblog.com/2016/09/moving-towards-more-secure-web.html) published at the end of last year.
 
-![HTTPS Chrome](/uploads/2017/01/https-chrome.png){:class="o-img o-img--center"}
+![HTTPS Chrome](/uploads/2017/01/https-chrome.png)
 
 Of course, this is really important, but it’s our responsibility as web developers to provide a trusted connection to our hosted content.
 
@@ -32,7 +33,7 @@ After I added my website and configured my DNS records I had to choose TLS mode 
 
 Apparently, the latter two options required a server configured to answer HTTPS connections, with a self-signed certificate, which was in contrast with my initial idea for quick and easy setup. The Flexible SSL was the obvious option, but the communication between GitHub Pages and CloudFlare will remain in plaintext.
 
-![CF Flexible SSL](/uploads/2017/01/cf-flexible-ssl.jpg){:class="o-img o-img--center"}
+![CF Flexible SSL](/uploads/2017/01/cf-flexible-ssl.jpg)
 
 **This means the browser was going to show my visitors the green, secure connection, although that would not have been entirely true.** This was not an acceptable solution, so I continued my research.
 
@@ -44,15 +45,15 @@ From a [performance perspective](https://www.netlify.com/features/), Netlify pro
 
 Let’s start with the actual configuration. After the registration process, you can immediately connect your site powered by GitHub Pages using the “Add a New Project” option from the dashboard.
 
-![Netlify Site Connect](/uploads/2017/01/netlify-site-connect.png){:class="o-img"}
+![Netlify Site Connect](/uploads/2017/01/netlify-site-connect.png)
 
 Next, you need to provide your domain name and edit the DNS servers with your domain register. I found really handy the option that Netlify offers to manage your domain, which saves the work of entering the DNS records manually. Of course, you have full control over all DNS settings, in case you need to fine tune them.
 
-![Netlify Domain](/uploads/2017/01/netlify-domain.png){:class="o-img"}
+![Netlify Domain](/uploads/2017/01/netlify-domain.png)
 
 The final step is to enable your TLS certificate issued by Let’s Encrypt from the HTTPS section on the dashboard. This happens with one click and it’s as simple as it sounds. Here you can also specify if you want to force HTTP connection to redirect automatically to HTTPS, which is really useful.
 
-![Netlify HTTPS](/uploads/2017/01/netlify-https.png){:class="o-img"}
+![Netlify HTTPS](/uploads/2017/01/netlify-https.png)
 
 By completing this simple process you’ll have an encrypted connection for your site and you can enjoy the green 🔒 in the address bar of your browser.
 

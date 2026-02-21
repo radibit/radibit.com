@@ -1,5 +1,6 @@
 ---
-title: What you see is faster than what you get - ways to speed up perception
+title: 'What You See Is Faster Than What You Get: Techniques for Perceived Performance'
+layout: ../../layouts/BlogPost.astro
 ---
 
 This May, I had the pleasure to present at [Web Performance Meetup](https://www.meetup.com/Berlin-Web-Performance-Group/) in Berlin. This was a very special moment for me as it was my first public talk :blush: The following is a transcript and slides from my presentation. You can also find links to all resources I used preparing for this talk. Enjoy!

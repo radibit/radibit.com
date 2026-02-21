@@ -1,0 +1,91 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SiteNav from '../../components/SiteNav.astro';
+
+const postFiles = import.meta.glob('./*.md', { eager: true });
+
+interface PostFrontmatter {
+  title: string;
+  external_url?: string;
+}
+
+interface PostModule {
+  frontmatter: PostFrontmatter;
+  url?: string;
+}
+
+const posts = Object.entries(postFiles as Record<string, PostModule>)
+  .map(([filepath, mod]) => {
+    const filename = filepath.replace('./', '').replace('.md', '');
+    const dateMatch = filename.match(/^(\d{4}-\d{2}-\d{2})/);
+    const dateStr = dateMatch ? dateMatch[1] : '';
+    const date = dateStr ? new Date(dateStr) : null;
+    const formattedDate = date
+      ? date.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })
+      : '';
+
+    return {
+      title: mod.frontmatter.title,
+      external_url: mod.frontmatter.external_url,
+      slug: filename,
+      url: `/posts/${filename}`,
+      dateStr,
+      formattedDate,
+    };
+  })
+  .sort((a, b) => b.dateStr.localeCompare(a.dateStr));
+---
+
+<Layout title="Blog · radibit" description="Articles on web accessibility, performance, and sustainable engineering.">
+  <SiteNav />
+
+  <main class="pt-12 px-10 pb-20 desk:px-16">
+    <div class="max-w-[72ch] mx-auto">
+
+      <h1 class="font-display font-optical-auto text-[clamp(2.5rem,6vw,4rem)] font-semibold leading-none tracking-[-0.03em] mb-12">
+        Writing
+      </h1>
+
+      <ul class="list-none p-0 m-0">
+        {posts.map((post) => (
+          <li class="border-t border-subtle py-8">
+            <div class="flex items-baseline gap-3 mb-[0.6rem]">
+              {post.formattedDate && (
+                <time
+                  datetime={post.dateStr}
+                  class="text-[0.72rem] font-medium tracking-[0.08em] uppercase text-muted whitespace-nowrap"
+                >
+                  {post.formattedDate}
+                </time>
+              )}
+              {post.external_url && (
+                <span
+                  aria-hidden="true"
+                  class="text-[0.72rem] font-semibold tracking-[0.12em] uppercase text-accent border border-accent px-[0.45rem] py-[0.1rem]"
+                >
+                  External ↗
+                </span>
+              )}
+            </div>
+
+            <a
+              href={post.external_url ?? post.url}
+              target={post.external_url ? '_blank' : undefined}
+              rel={post.external_url ? 'noopener noreferrer' : undefined}
+              class="font-display font-optical-auto text-[clamp(1.25rem,3vw,1.75rem)] font-medium tracking-[-0.02em] leading-[1.2] text-fg no-underline transition-colors duration-200 hover:text-accent"
+            >
+              {post.title}
+              {post.external_url && <span class="sr-only"> (opens in a new tab)</span>}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+    </div>
+  </main>
+
+  <footer class="flex flex-wrap justify-between items-center gap-2 py-8 px-10 text-[0.8125rem] text-muted tracking-[0.03em] border-t border-subtle desk:px-16">
+    <span>© {new Date().getFullYear()} radibit Ltd. All rights reserved.</span>
+    <a href="mailto:contact@radibit.com" class="text-muted no-underline hover:underline">contact@radibit.com</a>
+  </footer>
+</Layout>

@@ -1,70 +1,151 @@
 ---
-import Art from '../components/Art.astro';
 import Layout from '../layouts/Layout.astro';
-import '../styles/global.css'
+import SiteNav from '../components/SiteNav.astro';
 ---
 
-<Layout title="Web accessibility and performance engineering">
-	<div
-		style={{
-			display: 'flex',
-			flexDirection: 'column',
-			minHeight: 'calc(100vh - 2em)',
-			overflow: 'hidden'
-		}}
-	>
-		<header class="c-header" role="banner">
-			<a class="c-logo" href="/" aria-label="radibit logo">
-				<svg
-					viewBox="0 0 427 426"
-					xmlns="http://www.w3.org/2000/svg"
-					fill-rule="evenodd"
-					clip-rule="evenodd"
-					stroke-linejoin="round"
-					stroke-miterlimit="2"
-				>
-					<path
-						d="M.964 122.489v-.563L123.705.364v122.125V.364h302.532v303.147h-.3L303.496 425.636H.964V122.489z"
-						fill="#fff"
-					/>
-					<g
-						font-family="'Futura-Medium','Futura',sans-serif"
-						font-weight="500"
-						font-size="110.64"
-					>
-						<text x="71.6" y="250.816">
-							r
-							<tspan x="112.225px 178.566px" y="250.816px 250.816px">
-								adi
-							</tspan>
-						</text>
-						<text x="151.419" y="375.287">
-							bit
-						</text>
-					</g>
-				</svg>
-			</a>
-		</header>
-		<main
-			style={{
-				maxWidth: '80em',
-				margin: '0 auto',
-			}}
-		>
-		<header class="c-homeHeader">
-      <div class="c-homeHeader__intro">
-        <h1>Web accessibility and performance engineering</h1>
-				<p>Hey, I'm Radimir! I can help your team deliver accessible, sustainable, and performant web solutions.</p>
-				<p>Send a message to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#114;&#97;&#100;&#105;&#98;&#105;&#116;&#46;&#99;&#111;&#109;">&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#114;&#97;&#100;&#105;&#98;&#105;&#116;&#46;&#99;&#111;&#109;</a></p>
+<Layout title="Radimir Bitsov · Web Accessibility & Performance Engineering">
+  <SiteNav />
+
+  <main>
+    <!-- Hero -->
+    <section
+      class="hero animate-rise-1 grid grid-cols-1 gap-12 pt-20 px-10 pb-16 border-b border-subtle md:grid-cols-2 md:items-end md:gap-16 desk:px-16"
+      aria-labelledby="hero-hed"
+    >
+      <div>
+        <p
+          class="animate-rise-1 inline-flex items-center gap-[0.6rem] text-[0.8125rem] font-semibold tracking-[0.16em] uppercase text-accent mb-7"
+          aria-hidden="true"
+        >
+          <span class="block w-8 h-[1.5px] bg-accent"></span>
+          Web engineering
+        </p>
+        <h1
+          id="hero-hed"
+          class="animate-rise-2 font-display font-optical-auto text-[clamp(3.25rem,8vw,7rem)] font-semibold leading-none tracking-[-0.035em]"
+        >
+          Accessible.<br />Fast.<br /><em class="italic font-light text-accent">Sustainable.</em>
+        </h1>
       </div>
 
-      <div class="c-homeHeader__art">
-        <Art />
+      <div class="animate-rise-3">
+        <p class="font-display font-optical-auto text-[1.35rem] font-medium tracking-[-0.02em] mb-3">
+          Radimir Bitsov
+        </p>
+        <p class="text-[clamp(1rem,1.5vw,1.15rem)] leading-[1.7] max-w-[44ch] text-fg opacity-75">
+          I help teams build web experiences that work for everyone — without compromise on speed, inclusion, or environmental impact.
+        </p>
+        <p class="text-[clamp(1rem,1.5vw,1.15rem)] leading-[1.7] max-w-[44ch] text-fg opacity-75 mt-[0.6rem]">
+          Available for consultancy and workshops.
+        </p>
+        <a
+          href="mailto:contact@radibit.com"
+          class="inline-block mt-9 text-[0.8125rem] font-semibold tracking-[0.1em] uppercase text-bg bg-fg no-underline px-8 py-[0.9rem] transition-opacity duration-200 hover:opacity-75"
+        >
+          Get in touch
+        </a>
       </div>
-    </header>
-		</main>
-		<footer class="c-footer">
-			© {new Date().getFullYear()} Copyright radibit Ltd. All rights reserved.
-		</footer>
-	</div>
+    </section>
+
+    <!-- Expertise -->
+    <section
+      class="animate-rise-4 py-[4.5rem] px-10 border-b border-subtle desk:px-16"
+      aria-labelledby="expertise-title"
+    >
+      <p
+        id="expertise-title"
+        class="text-[0.8125rem] font-semibold tracking-[0.16em] uppercase text-muted mb-12"
+      >
+        Areas of expertise
+      </p>
+
+      <div class="grid grid-cols-1 desk:grid-cols-3">
+        <article class="group grid grid-cols-[2.5rem_1fr] gap-8 py-9 border-t border-subtle desk:block desk:py-0 desk:px-10 desk:border-t-0 desk:border-l desk:first:pl-0 desk:first:border-l-0">
+          <span aria-hidden="true" class="font-display italic text-sm font-light text-muted pt-2">01</span>
+          <div>
+            <h2 class="font-display font-optical-auto text-[clamp(1.5rem,3vw,2.5rem)] font-medium tracking-tight leading-[1.1] transition-colors duration-200 group-hover:text-accent">Web Accessibility</h2>
+            <p class="mt-[0.7rem] text-[0.9375rem] leading-[1.65] opacity-65 max-w-[52ch]">
+              WCAG audits, screen reader testing, keyboard navigation, and inclusive design patterns that go beyond automated tooling.
+            </p>
+          </div>
+        </article>
+
+        <article class="group grid grid-cols-[2.5rem_1fr] gap-8 py-9 border-t border-subtle desk:block desk:py-0 desk:px-10 desk:border-t-0 desk:border-l desk:first:pl-0 desk:first:border-l-0">
+          <span aria-hidden="true" class="font-display italic text-sm font-light text-muted pt-2">02</span>
+          <div>
+            <h2 class="font-display font-optical-auto text-[clamp(1.5rem,3vw,2.5rem)] font-medium tracking-tight leading-[1.1] transition-colors duration-200 group-hover:text-accent">Sustainability</h2>
+            <p class="mt-[0.7rem] text-[0.9375rem] leading-[1.65] opacity-65 max-w-[52ch]">
+              Measuring and reducing digital carbon footprints. Efficient assets, lean architecture, and green hosting strategies.
+            </p>
+          </div>
+        </article>
+
+        <article class="group grid grid-cols-[2.5rem_1fr] gap-8 py-9 border-t border-subtle desk:block desk:py-0 desk:px-10 desk:border-t-0 desk:border-l desk:first:pl-0 desk:first:border-l-0">
+          <span aria-hidden="true" class="font-display italic text-sm font-light text-muted pt-2">03</span>
+          <div>
+            <h2 class="font-display font-optical-auto text-[clamp(1.5rem,3vw,2.5rem)] font-medium tracking-tight leading-[1.1] transition-colors duration-200 group-hover:text-accent">Performance</h2>
+            <p class="mt-[0.7rem] text-[0.9375rem] leading-[1.65] opacity-65 max-w-[52ch]">
+              Core Web Vitals, loading strategies, render optimisation, and engineering for real-world network conditions and devices.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section
+      class="animate-rise-5 py-[4.5rem] px-10 border-b border-subtle desk:px-16"
+      aria-labelledby="services-title"
+    >
+      <p
+        id="services-title"
+        class="text-[0.8125rem] font-semibold tracking-[0.16em] uppercase text-muted"
+      >
+        How we work together
+      </p>
+
+      <div class="grid grid-cols-1 gap-6 mt-12 md:grid-cols-2">
+        <div class="border-[1.5px] border-fg px-9 pt-9 pb-11 transition-colors duration-200 hover:border-accent">
+          <p class="text-xs font-semibold tracking-[0.14em] uppercase text-accent mb-[1.1rem]">
+            Consultancy
+          </p>
+          <h2 class="font-display font-optical-auto text-[1.85rem] font-medium tracking-tight leading-[1.15]">
+            Strategic guidance for your team
+          </h2>
+          <p class="mt-3 text-[0.9375rem] leading-[1.65] opacity-65 max-w-[40ch]">
+            Deep-dive audits, architecture reviews, and sustained partnerships to embed best practices across your org.
+          </p>
+          <a
+            href="mailto:contact@radibit.com"
+            class="inline-block mt-7 text-[0.8125rem] font-semibold tracking-[0.1em] uppercase no-underline text-fg border-b-2 border-accent pb-[0.2rem] transition-colors duration-200 hover:text-accent"
+          >
+            Start a conversation →
+          </a>
+        </div>
+
+        <div class="border-[1.5px] border-fg px-9 pt-9 pb-11 transition-colors duration-200 hover:border-accent">
+          <p class="text-xs font-semibold tracking-[0.14em] uppercase text-accent mb-[1.1rem]">
+            Workshops
+          </p>
+          <h2 class="font-display font-optical-auto text-[1.85rem] font-medium tracking-tight leading-[1.15]">
+            Hands-on training that sticks
+          </h2>
+          <p class="mt-3 text-[0.9375rem] leading-[1.65] opacity-65 max-w-[40ch]">
+            Custom sessions on accessibility, performance, and sustainable web development for engineering and product teams.
+          </p>
+          <a
+            href="mailto:contact@radibit.com"
+            class="inline-block mt-7 text-[0.8125rem] font-semibold tracking-[0.1em] uppercase no-underline text-fg border-b-2 border-accent pb-[0.2rem] transition-colors duration-200 hover:text-accent"
+          >
+            Book a workshop →
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="flex flex-wrap justify-between items-center gap-2 py-8 px-10 text-[0.8125rem] text-muted tracking-[0.03em] desk:px-16">
+    <span>© {new Date().getFullYear()} radibit Ltd. All rights reserved.</span>
+    <a href="mailto:contact@radibit.com" class="text-muted no-underline hover:underline">contact@radibit.com</a>
+  </footer>
 </Layout>
