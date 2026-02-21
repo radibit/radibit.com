@@ -1,15 +1,15 @@
 ---
-import Layout from '../../layouts/Layout.astro';
 import SiteNav from '../../components/SiteNav.astro';
+import Layout from '../../layouts/Layout.astro';
 
 const postFiles = import.meta.glob('./*.md', { eager: true });
 
-interface PostFrontmatter {
+type PostFrontmatter ={
   title: string;
   external_url?: string;
 }
 
-interface PostModule {
+type PostModule = {
   frontmatter: PostFrontmatter;
   url?: string;
 }

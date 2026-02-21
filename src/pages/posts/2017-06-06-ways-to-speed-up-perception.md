@@ -8,7 +8,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.001.webp">
-		<img src="/uploads/2017/06/images.001.jpg">
+		<img src="/uploads/2017/06/images.001.jpg" alt="Title slide: What You See Is Faster Than What You Get — talk introduction">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -23,7 +23,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.002.webp">
-		<img src="/uploads/2017/06/images.002.jpg">
+		<img src="/uploads/2017/06/images.002.jpg" alt="Speaker introduction — Radimir, front-end developer passionate about web performance, accessibility, and interface animation">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -35,7 +35,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.003.webp">
-		<img src="/uploads/2017/06/images.003.jpg">
+		<img src="/uploads/2017/06/images.003.jpg" alt="Speaker's social media channels listed under the handle @radibit">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -47,7 +47,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.004.webp">
-		<img src="/uploads/2017/06/images.004.jpg">
+		<img src="/uploads/2017/06/images.004.jpg" alt="Lewis Carroll quote illustrating how tricky time perception can be">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -59,7 +59,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.005.webp">
-		<img src="/uploads/2017/06/images.005.jpg">
+		<img src="/uploads/2017/06/images.005.jpg" alt="Time as an objective, precisely measurable quantity — atomic clocks">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -84,7 +84,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.007.webp">
-		<img src="/uploads/2017/06/images.007.jpg">
+		<img src="/uploads/2017/06/images.007.jpg" alt="Too much focus on objective page load time — web performance tracking tools">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -96,7 +96,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.008.webp">
-		<img src="/uploads/2017/06/images.008.jpg">
+		<img src="/uploads/2017/06/images.008.jpg" alt="The way people perceive time is subjective">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -108,7 +108,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide c-slide--large">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.009.webp">
-		<img src="/uploads/2017/06/images.009.jpg">
+		<img src="/uploads/2017/06/images.009.jpg" alt="The Kappa effect — a journey covering more distance appears to take longer even when time is equal">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -120,7 +120,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.010.webp">
-		<img src="/uploads/2017/06/images.010.jpg">
+		<img src="/uploads/2017/06/images.010.jpg" alt="Vital performance metrics: time-to-interact, first meaningful paint, and above-the-fold loading time">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -132,7 +132,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.011.webp">
-		<img src="/uploads/2017/06/images.011.jpg">
+		<img src="/uploads/2017/06/images.011.jpg" alt="Web performance tools: WebPagetest, Lighthouse, and perf-tooling.today">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>Great tools and resources:</p>
@@ -154,7 +154,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.012.webp">
-		<img src="/uploads/2017/06/images.012.jpg">
+		<img src="/uploads/2017/06/images.012.jpg" alt="People care about how apps feel — everyone contributes to great user experience">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -166,7 +166,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.016.webp">
-		<img src="/uploads/2017/06/images.016.jpg">
+		<img src="/uploads/2017/06/images.016.jpg" alt="Talk outline: why perceived performance matters, how people perceive time, and techniques to improve it">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -178,7 +178,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.017.webp">
-		<img src="/uploads/2017/06/images.017.jpg">
+		<img src="/uploads/2017/06/images.017.jpg" alt="Reasons why perceived performance matters">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -190,7 +190,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.018.webp">
-		<img src="/uploads/2017/06/images.018.jpg">
+		<img src="/uploads/2017/06/images.018.jpg" alt="Twitter's progressive web app with data saver and progressive loading — impact on brand perception">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -202,7 +202,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.019.webp">
-		<img src="/uploads/2017/06/images.019.jpg">
+		<img src="/uploads/2017/06/images.019.jpg" alt="housing.com's new progressive web app platform and its performance improvements">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -214,7 +214,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.020.webp">
-		<img src="/uploads/2017/06/images.020.jpg">
+		<img src="/uploads/2017/06/images.020.jpg" alt="Radware's study: a 500ms delay increases user frustration by 26% and drops satisfaction by 8%">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -226,7 +226,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.021.webp">
-		<img src="/uploads/2017/06/images.021.jpg">
+		<img src="/uploads/2017/06/images.021.jpg" alt="Slow websites dramatically reduce purchase intent and perceived brand functionality">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -238,7 +238,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.022.webp">
-		<img src="/uploads/2017/06/images.022.jpg">
+		<img src="/uploads/2017/06/images.022.jpg" alt="Ilya Grigorik's definition: perceived performance as a function of expected performance, actual performance, and UX">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -250,7 +250,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.023.webp">
-		<img src="/uploads/2017/06/images.023.jpg">
+		<img src="/uploads/2017/06/images.023.jpg" alt="Perceived performance as an opportunity to optimize by thinking like the user">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -262,7 +262,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.024.webp">
-		<img src="/uploads/2017/06/images.024.jpg">
+		<img src="/uploads/2017/06/images.024.jpg" alt="How people perceive time — section introduction">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -274,7 +274,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide c-slide--large">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.025.webp">
-		<img src="/uploads/2017/06/images.025.jpg">
+		<img src="/uploads/2017/06/images.025.jpg" alt="The internal clock model: pacemaker, memory, and decision-making stages of time perception">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -286,7 +286,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.026.webp">
-		<img src="/uploads/2017/06/images.026.jpg">
+		<img src="/uploads/2017/06/images.026.jpg" alt="Perceived duration between successive events — eye saccades cause ~40 minutes of lost time per day">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -314,7 +314,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.028.webp">
-		<img src="/uploads/2017/06/images.028.jpg">
+		<img src="/uploads/2017/06/images.028.jpg" alt="Perceived duration and its impact on web performance — section transition">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -326,7 +326,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide c-slide--large">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.029.webp">
-		<img src="/uploads/2017/06/images.029.jpg">
+		<img src="/uploads/2017/06/images.029.jpg" alt="Reaction time studies: four key time durations — 0.1–0.2s, 0.5–1s, 2–5s, and 5–10s">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -352,7 +352,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.030.webp">
-		<img src="/uploads/2017/06/images.030.jpg">
+		<img src="/uploads/2017/06/images.030.jpg" alt="Visual feedback guidelines: under 1s no indicator needed, 1–3s feedback required, 3–8s explain what the app is doing">
 	</picture>
 	<div class="c-slide__annotations">
 		<ul>
@@ -372,7 +372,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.035.webp">
-		<img src="/uploads/2017/06/images.035.jpg">
+		<img src="/uploads/2017/06/images.035.jpg" alt="Allen Pike: joy is lost after 1 second and users lose their feeling of task flow">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -384,7 +384,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide c-slide--large">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.036.webp">
-		<img src="/uploads/2017/06/images.036.jpg">
+		<img src="/uploads/2017/06/images.036.jpg" alt="Just-noticeable difference (JND) and the Weber–Fechner law relating stimulus change to perceived change">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -399,7 +399,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.037.webp">
-		<img src="/uploads/2017/06/images.037.jpg">
+		<img src="/uploads/2017/06/images.037.jpg" alt="Steven Seow's conclusion: a minimum 20% change is required for users to detect any difference">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -411,7 +411,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.038.webp">
-		<img src="/uploads/2017/06/images.038.jpg">
+		<img src="/uploads/2017/06/images.038.jpg" alt="Aim for 30% improvement to exceed the perception threshold — e.g. 0.9s faster for a 3s action">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -423,7 +423,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.039.webp">
-		<img src="/uploads/2017/06/images.039.jpg">
+		<img src="/uploads/2017/06/images.039.jpg" alt="How to speed up perception — techniques section introduction">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -435,7 +435,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.040.webp">
-		<img src="/uploads/2017/06/images.040.jpg">
+		<img src="/uploads/2017/06/images.040.jpg" alt="Twitter poll asking about favorite techniques for improving perceived performance">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -447,7 +447,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.041.webp">
-		<img src="/uploads/2017/06/images.041.jpg">
+		<img src="/uploads/2017/06/images.041.jpg" alt="Optimistic updates: invisible background operations that happen before the user asks for them">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -459,7 +459,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.042.webp">
-		<img src="/uploads/2017/06/images.042.jpg">
+		<img src="/uploads/2017/06/images.042.jpg" alt="Instagram's optimistic update: uploads in the background while the user adds a title and tags">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -471,7 +471,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.043.webp">
-		<img src="/uploads/2017/06/images.043.jpg">
+		<img src="/uploads/2017/06/images.043.jpg" alt="Instagram registers a Like action even before the feed has finished loading">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -483,7 +483,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.044.webp">
-		<img src="/uploads/2017/06/images.044.jpg">
+		<img src="/uploads/2017/06/images.044.jpg" alt="Skeleton screens: Luke Wroblewski's alternative to spinners that creates anticipation and reduces cognitive load">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -495,7 +495,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.046.webp">
-		<img src="/uploads/2017/06/images.046.jpg">
+		<img src="/uploads/2017/06/images.046.jpg" alt="Apple Human Interface Guidelines: Safari iOS launch screen that creates an instant, responsive feel">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -520,7 +520,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.048.webp">
-		<img src="/uploads/2017/06/images.048.jpg">
+		<img src="/uploads/2017/06/images.048.jpg" alt="Progressive loading — distinct from progressive JPEG loading">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -546,7 +546,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.050.webp">
-		<img src="/uploads/2017/06/images.050.jpg">
+		<img src="/uploads/2017/06/images.050.jpg" alt="Tools for progressive loading">
 	</picture>
 	<div class="c-slide__annotations">
 		<span>
@@ -569,7 +569,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.051.webp">
-		<img src="/uploads/2017/06/images.051.jpg">
+		<img src="/uploads/2017/06/images.051.jpg" alt="CodePen demo using color-extractor and CSS linear-gradient for progressive placeholders">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -581,7 +581,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.052.webp">
-		<img src="/uploads/2017/06/images.052.jpg">
+		<img src="/uploads/2017/06/images.052.jpg" alt="Progress indicators: combine with exact progress percentage (e.g. 70% or 1 of 4) to reduce perceived wait time">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -606,7 +606,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.054.webp">
-		<img src="/uploads/2017/06/images.054.jpg">
+		<img src="/uploads/2017/06/images.054.jpg" alt="Spinners and loaders — what about them?">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -618,7 +618,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.055.webp">
-		<img src="/uploads/2017/06/images.055.jpg">
+		<img src="/uploads/2017/06/images.055.jpg" alt="Creative spinners and loaders — fun to build but not ideal as the sole loading indicator">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -630,7 +630,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.056.webp">
-		<img src="/uploads/2017/06/images.056.jpg">
+		<img src="/uploads/2017/06/images.056.jpg" alt="Avoid using a spinner as the only loading indicator — it draws attention to the wait">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -642,7 +642,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.057.webp">
-		<img src="/uploads/2017/06/images.057.jpg">
+		<img src="/uploads/2017/06/images.057.jpg" alt="Interface animation: one of the most powerful techniques for affecting the perception of time">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -667,7 +667,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.059.webp">
-		<img src="/uploads/2017/06/images.059.jpg">
+		<img src="/uploads/2017/06/images.059.jpg" alt="Animation helps the eye track newly positioned objects, creating a mental map — Val Head's UI animation article">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -679,7 +679,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide c-slide--large">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.060.webp">
-		<img src="/uploads/2017/06/images.060.jpg">
+		<img src="/uploads/2017/06/images.060.jpg" alt="Sarah Drasner on context-shifting animations: space, time, and placement associations make interactions feel fluid">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -692,7 +692,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.061.webp">
-		<img src="/uploads/2017/06/images.061.jpg">
+		<img src="/uploads/2017/06/images.061.jpg" alt="Animation is powerful but performance and functionality must not be sacrificed">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -704,7 +704,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.062.webp">
-		<img src="/uploads/2017/06/images.062.jpg">
+		<img src="/uploads/2017/06/images.062.jpg" alt="Providing an active button state: one of the quickest techniques for improving perceived performance">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -742,7 +742,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.065.webp">
-		<img src="/uploads/2017/06/images.065.jpg">
+		<img src="/uploads/2017/06/images.065.jpg" alt="Think carefully about performance optimizations and their contribution to the user experience">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -767,7 +767,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.067.webp">
-		<img src="/uploads/2017/06/images.067.jpg">
+		<img src="/uploads/2017/06/images.067.jpg" alt="What matters most is how fast your website or app feels">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -779,7 +779,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.068.webp">
-		<img src="/uploads/2017/06/images.068.jpg">
+		<img src="/uploads/2017/06/images.068.jpg" alt="Care more about your users — it's all about them">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
@@ -791,7 +791,7 @@ This May, I had the pleasure to present at [Web Performance Meetup](https://www.
 <article class="c-slide">
 	<picture class="c-slide__image">
 		<source type="image/webp" srcset="/uploads/2017/06/images.069.webp">
-		<img src="/uploads/2017/06/images.069.jpg">
+		<img src="/uploads/2017/06/images.069.jpg" alt="Thank you — closing slide">
 	</picture>
 	<div class="c-slide__annotations">
 		<p>
