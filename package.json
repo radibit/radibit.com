@@ -14,8 +14,8 @@
     "deploy": "npm run build && netlify deploy"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.0",
-    "astro": "^6.4.6",
+    "@tailwindcss/vite": "^4.3.1",
+    "astro": "^7.0.0",
     "tailwindcss": "^4.2.0",
     "typescript": "^5.9.3"
   },
