@@ -174,6 +174,7 @@ export const brands: {
   { name: 'LIQID', logo: 'liqid.svg', width: 166, height: 48 },
   { name: 'Qunomedical', logo: 'qunomedical.svg', width: 332, height: 48 },
   { name: 'Loopline Systems', logo: 'loopline.png', width: 155, height: 48 },
+  { name: 'Calibre', logo: 'calibre.svg', width: 215, height: 48 },
   { name: 'Klara', logo: 'klara.svg', width: 152, height: 48 },
   { name: 'ZenMate', logo: 'zenmate.svg', width: 168, height: 48 },
   { name: 'Address.bg', logo: 'address.svg', width: 188, height: 48 },
