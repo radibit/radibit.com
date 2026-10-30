@@ -176,7 +176,7 @@ export const brands: {
   { name: 'Loopline Systems', logo: 'loopline.png', width: 155, height: 48 },
   { name: 'Calibre', logo: 'calibre.svg', width: 215, height: 48 },
   { name: 'Klara', logo: 'klara.svg', width: 152, height: 48 },
-  { name: 'CarLifeByDani', logo: 'carlifebydani.svg', width: 162, height: 48 },
+  { name: 'Car Life by Dani', logo: 'carlifebydani.svg', width: 162, height: 48 },
   { name: 'ZenMate', logo: 'zenmate.svg', width: 168, height: 48 },
   { name: 'Address.bg', logo: 'address.svg', width: 188, height: 48 },
 ];
