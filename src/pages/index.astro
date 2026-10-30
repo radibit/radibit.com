@@ -1,151 +1,462 @@
 ---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import BauhausShapes from '../components/BauhausShapes.astro';
+import BrandMarquee from '../components/BrandMarquee.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 import SiteNav from '../components/SiteNav.astro';
 import Layout from '../layouts/Layout.astro';
+import { experience, firstYear, languages, projects, skills } from '../data/profile';
+import { getPosts } from '../lib/posts';
+
+const latestPosts = getPosts().slice(0, 3);
+const yearsOnWeb = new Date().getFullYear() - firstYear;
+
+// Rendered only once the photo exists, so the page never shows a broken image
+const avatarFiles = import.meta.glob<{ default: ImageMetadata }>(
+  '../assets/avatar.{jpg,jpeg,png,webp}',
+  { eager: true },
+);
+const avatar = Object.values(avatarFiles)[0]?.default;
+
+const expertise = [
+  {
+    num: '01',
+    title: 'Accessibility',
+    body: 'WCAG audits, screen reader testing, keyboard & mobile navigation, and inclusive design patterns that go beyond automated tooling.',
+  },
+  {
+    num: '02',
+    title: 'Sustainability',
+    body: 'Measuring and reducing digital carbon footprints. Efficient assets, lean architecture, and green hosting strategies.',
+  },
+  {
+    num: '03',
+    title: 'Performance',
+    body: 'Core Web Vitals, loading strategies, render optimisation, and engineering for real-world network conditions and devices.',
+  },
+];
+
+const services = [
+  {
+    kicker: 'Consultancy',
+    title: 'Strategic guidance for your team',
+    body: 'Deep-dive audits, architecture reviews, and sustained partnerships to embed best practices across your org.',
+    cta: 'Start a conversation',
+  },
+  {
+    kicker: 'Workshops',
+    title: 'Hands-on training that sticks',
+    body: 'Custom sessions on accessibility, performance, and sustainable web development for engineering and product teams.',
+    cta: 'Book a workshop',
+  },
+];
 ---
 
-<Layout title="Radimir Bitsov · Web Accessibility & Performance Engineering">
+<Layout title="Radimir Bitsov · Accessible, Fast, Sustainable Web & Mobile">
   <SiteNav />
 
   <main>
-    <!-- Hero -->
-    <section
-      class="hero animate-rise-1 grid grid-cols-1 gap-12 pt-20 px-10 pb-16 border-b border-subtle md:grid-cols-2 md:items-end md:gap-16 desk:px-16"
-      aria-labelledby="hero-hed"
-    >
-      <div>
-        <p
-          class="animate-rise-1 inline-flex items-center gap-[0.6rem] text-[0.8125rem] font-semibold tracking-[0.16em] uppercase text-accent mb-7"
-          aria-hidden="true"
-        >
-          <span class="block w-8 h-[1.5px] bg-accent"></span>
-          Web engineering
-        </p>
-        <h1
-          id="hero-hed"
-          class="animate-rise-2 font-display font-optical-auto text-[clamp(3.25rem,8vw,7rem)] font-semibold leading-none tracking-[-0.035em]"
-        >
-          Accessible.<br />Fast.<br /><em class="italic font-light text-accent">Sustainable.</em>
-        </h1>
+    <section class="shell pt-12 pb-20 md:pt-20 md:pb-28" aria-labelledby="hero-hed">
+      <p class="label-mono animate-rise-1 text-muted mb-8">
+        Web & mobile engineering <span aria-hidden="true">/</span> Consultancy
+      </p>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-[1.25fr_1fr] md:items-center md:gap-16">
+        <div>
+          <h1
+            id="hero-hed"
+            class="animate-rise-2 font-display font-light text-[clamp(3rem,8.5vw,7.5rem)] leading-[0.98] tracking-[-0.04em]"
+          >
+            Accessible.<br />Fast.<br /><span class="text-accent-ink">Sustainable.</span>
+          </h1>
+        </div>
+
+        <div class="animate-rise-3 md:mb-8">
+          <BauhausShapes />
+        </div>
       </div>
 
-      <div class="animate-rise-3">
-        <p class="font-display font-optical-auto text-[1.35rem] font-medium tracking-[-0.02em] mb-3">
-          Radimir Bitsov
-        </p>
-        <p class="text-[clamp(1rem,1.5vw,1.15rem)] leading-[1.7] max-w-[44ch] text-fg opacity-75">
-          I help teams build web experiences that work for everyone — without compromise on speed, inclusion, or environmental impact.
-        </p>
-        <p class="text-[clamp(1rem,1.5vw,1.15rem)] leading-[1.7] max-w-[44ch] text-fg opacity-75 mt-[0.6rem]">
-          Available for consultancy and workshops.
-        </p>
+      <div class="animate-rise-4 mt-14 grid grid-cols-1 gap-8 border-t border-line pt-10 md:grid-cols-[1.25fr_1fr] md:gap-16">
+        <div class="flex items-start gap-5 sm:gap-7">
+          {avatar && (
+            <Image
+              src={avatar}
+              alt="Portrait of Radimir Bitsov"
+              width={240}
+              height={240}
+              fit="cover"
+              quality={72}
+              class="clip-logo size-24 shrink-0 bg-surface sm:size-30"
+            />
+          )}
+          <div>
+            <p class="text-[1.375rem] font-normal tracking-[-0.01em] mb-3">Radimir Bitsov</p>
+            <p class="text-[1.0625rem] leading-[1.65] max-w-[48ch] text-muted">
+              I help teams build web and mobile experiences that work for everyone, without compromise on
+              speed, inclusion, or environmental impact. Available for consultancy and workshops.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-start gap-3 md:justify-end">
+          <a
+            href="mailto:contact@radibit.com"
+            class="rounded-full bg-fg text-bg px-6 py-3 text-[0.9375rem] font-medium no-underline transition-opacity duration-200 hover:opacity-80"
+          >
+            Get in touch
+          </a>
+          <a
+            href="/posts"
+            class="rounded-full border border-line bg-bg text-fg px-6 py-3 text-[0.9375rem] font-medium no-underline transition-colors duration-200 hover:bg-surface"
+          >
+            Read the writing
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <BrandMarquee />
+
+    <section class="bg-cool" aria-labelledby="expertise-title">
+      <div class="shell py-20 md:py-24">
+        <h2 id="expertise-title" class="label-mono text-on-cool-muted mb-12">
+          Areas of expertise
+        </h2>
+
+        <div class="grid grid-cols-1 desk:grid-cols-3">
+          {
+            expertise.map((item) => (
+              <article class="grid grid-cols-[3rem_1fr] gap-4 py-8 border-t border-fg/20 desk:block desk:py-0 desk:px-10 desk:border-t-0 desk:border-l desk:first:pl-0 desk:first:border-l-0">
+                <span aria-hidden="true" class="label-mono text-on-cool-muted pt-2 desk:block desk:mb-6">
+                  {item.num}
+                </span>
+                <div>
+                  <h3 class="font-display font-light text-[clamp(1.75rem,3vw,2.5rem)] tracking-[-0.03em] leading-[1.08]">
+                    {item.title}
+                  </h3>
+                  <p class="mt-3 text-[0.9375rem] leading-[1.65] text-on-cool-muted max-w-[44ch]">
+                    {item.body}
+                  </p>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="shell py-20 md:py-28" aria-labelledby="services-title">
+      <div class="flex flex-wrap items-end justify-between gap-6 mb-12">
+        <div>
+          <p class="label-mono text-muted mb-4">How we work together</p>
+          <h2
+            id="services-title"
+            class="font-display font-light text-[clamp(2rem,4.5vw,3.25rem)] tracking-[-0.035em] leading-[1.05] max-w-[18ch]"
+          >
+            Two ways to bring this into your team
+          </h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+        {
+          services.map((service) => (
+            <div class="flex flex-col rounded-card bg-surface p-8 md:p-10">
+              <p class="label-mono inline-flex items-center gap-2 self-start rounded-full bg-bg border border-line px-3 py-[0.4rem] text-muted mb-10">
+                <span aria-hidden="true" class="block size-[0.4rem] rounded-full bg-accent" />
+                {service.kicker}
+              </p>
+              <h3 class="font-display font-light text-[clamp(1.75rem,3vw,2.25rem)] tracking-[-0.03em] leading-[1.1]">
+                {service.title}
+              </h3>
+              <p class="mt-3 text-[0.9375rem] leading-[1.65] text-muted max-w-[40ch]">
+                {service.body}
+              </p>
+              <a
+                href="mailto:contact@radibit.com"
+                class="group mt-auto pt-10 self-start font-mono text-[0.875rem] text-fg underline decoration-accent decoration-2 underline-offset-4 hover:text-accent-ink"
+              >
+                <span aria-hidden="true" class="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>{' '}
+                {service.cta}
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="experience" class="border-t border-line scroll-mt-6" aria-labelledby="experience-title">
+      <div class="shell py-20 md:py-28">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-[1fr_1.6fr] md:gap-16 md:items-end mb-16">
+          <div>
+            <p class="label-mono text-muted mb-4">Experience</p>
+            <h2
+              id="experience-title"
+              class="font-display font-light text-[clamp(2rem,4.5vw,3.25rem)] tracking-[-0.035em] leading-[1.05]"
+            >
+              Building for the web since {firstYear}
+            </h2>
+          </div>
+          <dl class="grid grid-cols-3 gap-4 border-t border-line pt-6">
+            <div>
+              <dt class="label-mono text-muted">Years on the web</dt>
+              <dd class="mt-2 font-display font-light text-[clamp(2rem,4vw,3rem)] tracking-[-0.04em] leading-none">{yearsOnWeb}</dd>
+            </div>
+            <div>
+              <dt class="label-mono text-muted">Years in health tech</dt>
+              <dd class="mt-2 font-display font-light text-[clamp(2rem,4vw,3rem)] tracking-[-0.04em] leading-none">6</dd>
+            </div>
+            <div>
+              <dt class="label-mono text-muted">Years organising a11y meetup</dt>
+              <dd class="mt-2 font-display font-light text-[clamp(2rem,4vw,3rem)] tracking-[-0.04em] leading-none">3</dd>
+            </div>
+          </dl>
+        </div>
+
+        {
+          [experience.slice(0, 3), experience.slice(3)].map((group, i) => (
+            <ol
+              class="list-none"
+              id={i === 1 ? 'experience-more' : undefined}
+              start={i === 1 ? 4 : undefined}
+              data-experience-more={i === 1 ? '' : undefined}
+            >
+              {group.map((role) => (
+                <li class="grid grid-cols-1 gap-3 border-t border-line py-7 sm:grid-cols-[10rem_1fr] sm:gap-6 desk:gap-10">
+                  <p class="label-mono text-muted pt-1">
+                    {role.start} <span aria-hidden="true">→</span>
+                    <span class="sr-only">to</span> {role.end}
+                  </p>
+                  <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+                    <h3 class="font-display font-light text-[1.625rem] tracking-[-0.025em] leading-[1.15]">
+                      {role.title}
+                    </h3>
+                    <p class="text-[0.9375rem]">
+                      {role.url ? (
+                        <a
+                          href={role.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-fg underline decoration-line decoration-2 underline-offset-4 hover:decoration-accent"
+                        >
+                          {role.company}
+                          <span class="sr-only"> (opens in a new tab)</span>
+                        </a>
+                      ) : (
+                        role.company
+                      )}
+                      <span class="label-mono text-muted ml-2">{role.place}</span>
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          ))
+        }
+
+        <div class="border-t border-line pt-6">
+          <button
+            type="button"
+            hidden
+            aria-expanded="false"
+            aria-controls="experience-more"
+            data-experience-toggle
+            class="label-mono rounded-full border border-line px-4 py-[0.6rem] text-fg transition-colors duration-200 hover:bg-surface"
+          >
+            <span data-experience-label>Show more ({experience.length - 3})</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="bg-surface scroll-mt-6" aria-labelledby="skills-title">
+      <div class="shell py-20 md:py-28">
+        <p class="label-mono text-muted mb-4">Skills</p>
+        <h2
+          id="skills-title"
+          class="font-display font-light text-[clamp(2rem,4.5vw,3.25rem)] tracking-[-0.035em] leading-[1.05] mb-14"
+        >
+          What I bring to a team
+        </h2>
+
+        <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 desk:grid-cols-4">
+          {
+            skills.map((skill, i) => (
+              <div class="border-t border-fg pt-5">
+                <h3 class="flex items-center gap-2 label-mono mb-5">
+                  <span
+                    aria-hidden="true"
+                    class:list={[
+                      'block size-2.5',
+                      i === 0 && 'rounded-full bg-art-cool',
+                      i === 1 && 'bg-art-sun [clip-path:polygon(50%_0,100%_100%,0_100%)]',
+                      i === 2 && 'bg-accent',
+                      i === 3 && 'bg-fg',
+                    ]}
+                  />
+                  {skill.group}
+                </h3>
+                <ul class="list-none space-y-2.5">
+                  {skill.items.map((item) => (
+                    <li class="text-[1.0625rem] tracking-[-0.01em]">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          }
+        </div>
+
+        <dl class="mt-16 border-t border-line pt-6">
+          <dt class="label-mono text-muted mb-2">Languages</dt>
+          <dd>{languages}</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="projects" class="scroll-mt-6" aria-labelledby="projects-title">
+      <div class="shell py-20 md:py-28">
+        <p class="label-mono text-muted mb-4">Side projects</p>
+        <h2
+          id="projects-title"
+          class="font-display font-light text-[clamp(2rem,4.5vw,3.25rem)] tracking-[-0.035em] leading-[1.05] mb-14"
+        >
+          Things I build after hours
+        </h2>
+
+        <ul class="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-6">
+          {
+            projects.map((project) => (
+              <li class="group flex flex-col">
+                <div class="aspect-[3/2] overflow-hidden rounded-card bg-surface border border-line">
+                  {project.image && project.url ? (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true" class="block size-full">
+                      <Image
+                      src={project.image}
+                      alt=""
+                      width={720}
+                      quality={70}
+                        class="size-full object-cover object-top transition-transform duration-500 hover:scale-[1.03]"
+                      />
+                    </a>
+                  ) : (
+                    <svg viewBox="0 0 300 200" class="size-full" aria-hidden="true">
+                      <circle cx="92" cy="112" r="38" class="fill-art-cool" />
+                      <path d="M150 74 192 150H108Z" class="fill-art-sun" />
+                      <rect x="174" y="92" width="58" height="58" class="fill-accent" />
+                      <rect x="40" y="150" width="220" height="5" class="fill-fg" />
+                    </svg>
+                  )}
+                </div>
+                <p class="label-mono text-muted mt-5">
+                  {project.num} <span aria-hidden="true">·</span> {project.kind}
+                </p>
+                <h3 class="mt-2 font-display font-light text-[1.75rem] tracking-[-0.03em] leading-[1.1]">
+                  {project.url ? (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-fg underline decoration-line decoration-2 underline-offset-4 hover:text-accent-ink hover:decoration-accent"
+                    >
+                      {project.name} <span aria-hidden="true" class="text-[0.6em] align-middle">↗</span>
+                      <span class="sr-only"> (opens in a new tab)</span>
+                    </a>
+                  ) : (
+                    <span class="text-muted">{project.name}</span>
+                  )}
+                </h3>
+                <p class="mt-2 text-[0.9375rem] leading-[1.65] text-muted max-w-[44ch]">{project.body}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+
+    <section class="border-t border-line" aria-labelledby="writing-title">
+      <div class="shell py-20 md:py-28 grid grid-cols-1 gap-10 md:grid-cols-[1fr_1.6fr] md:gap-16">
+        <div>
+          <p class="label-mono text-muted mb-4">Writing &amp; talks</p>
+          <h2
+            id="writing-title"
+            class="font-display font-light text-[clamp(2rem,4.5vw,3.25rem)] tracking-[-0.035em] leading-[1.05]"
+          >
+            Notes from the field
+          </h2>
+          <a
+            href="/posts"
+            class="inline-block mt-8 font-mono text-[0.875rem] text-fg underline decoration-accent decoration-2 underline-offset-4 hover:text-accent-ink"
+          >
+            <span aria-hidden="true">→</span> All writing
+          </a>
+        </div>
+
+        <ul class="list-none">
+          {
+            latestPosts.map((post) => (
+              <li class="border-t border-line last:border-b">
+                <a
+                  href={post.external_url ?? post.url}
+                  target={post.external_url ? '_blank' : undefined}
+                  rel={post.external_url ? 'noopener noreferrer' : undefined}
+                  class="group grid grid-cols-1 gap-2 py-6 no-underline text-fg sm:grid-cols-[7.5rem_1fr_auto] sm:gap-6 sm:items-baseline"
+                >
+                  <time datetime={post.dateStr} class="label-mono text-muted">
+                    {post.formattedDate}
+                  </time>
+                  <span class="text-[1.125rem] leading-[1.4] tracking-[-0.01em] transition-colors duration-200 group-hover:text-accent-ink">
+                    {post.title}
+                  </span>
+                  <span aria-hidden="true" class="label-mono text-muted">
+                    {post.external_url ? 'External ↗' : '→'}
+                  </span>
+                  {post.external_url && <span class="sr-only"> (external, opens in a new tab)</span>}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-accent text-on-accent" aria-labelledby="cta-title">
+      <div class="shell py-20 md:py-28 flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="label-mono mb-6">Let's talk</p>
+          <h2
+            id="cta-title"
+            class="font-display font-light text-[clamp(2.25rem,6vw,4.5rem)] tracking-[-0.04em] leading-none max-w-[16ch]"
+          >
+            Make the web work for everyone.
+          </h2>
+        </div>
         <a
           href="mailto:contact@radibit.com"
-          class="inline-block mt-9 text-[0.8125rem] font-semibold tracking-widest uppercase text-bg bg-fg no-underline px-8 py-[0.9rem] transition-opacity duration-200 hover:opacity-75"
+          class="self-start md:self-auto rounded-full bg-on-accent text-accent px-7 py-[0.9rem] text-[0.9375rem] font-medium no-underline transition-opacity duration-200 hover:opacity-85"
         >
-          Get in touch
+          contact@radibit.com
         </a>
-      </div>
-    </section>
-
-    <!-- Expertise -->
-    <section
-      class="animate-rise-4 py-18 px-10 border-b border-subtle desk:px-16"
-      aria-labelledby="expertise-title"
-    >
-      <p
-        id="expertise-title"
-        class="text-[0.8125rem] font-semibold tracking-[0.16em] uppercase text-muted mb-12"
-      >
-        Areas of expertise
-      </p>
-
-      <div class="grid grid-cols-1 desk:grid-cols-3">
-        <article class="group grid grid-cols-[2.5rem_1fr] gap-8 py-9 border-t border-subtle desk:block desk:py-0 desk:px-10 desk:border-t-0 desk:border-l desk:first:pl-0 desk:first:border-l-0">
-          <span aria-hidden="true" class="font-display italic text-sm font-light text-muted pt-2">01</span>
-          <div>
-            <h2 class="font-display font-optical-auto text-[clamp(1.5rem,3vw,2.5rem)] font-medium tracking-tight leading-[1.1] transition-colors duration-200 group-hover:text-accent">Web Accessibility</h2>
-            <p class="mt-[0.7rem] text-[0.9375rem] leading-[1.65] opacity-65 max-w-[52ch]">
-              WCAG audits, screen reader testing, keyboard navigation, and inclusive design patterns that go beyond automated tooling.
-            </p>
-          </div>
-        </article>
-
-        <article class="group grid grid-cols-[2.5rem_1fr] gap-8 py-9 border-t border-subtle desk:block desk:py-0 desk:px-10 desk:border-t-0 desk:border-l desk:first:pl-0 desk:first:border-l-0">
-          <span aria-hidden="true" class="font-display italic text-sm font-light text-muted pt-2">02</span>
-          <div>
-            <h2 class="font-display font-optical-auto text-[clamp(1.5rem,3vw,2.5rem)] font-medium tracking-tight leading-[1.1] transition-colors duration-200 group-hover:text-accent">Sustainability</h2>
-            <p class="mt-[0.7rem] text-[0.9375rem] leading-[1.65] opacity-65 max-w-[52ch]">
-              Measuring and reducing digital carbon footprints. Efficient assets, lean architecture, and green hosting strategies.
-            </p>
-          </div>
-        </article>
-
-        <article class="group grid grid-cols-[2.5rem_1fr] gap-8 py-9 border-t border-subtle desk:block desk:py-0 desk:px-10 desk:border-t-0 desk:border-l desk:first:pl-0 desk:first:border-l-0">
-          <span aria-hidden="true" class="font-display italic text-sm font-light text-muted pt-2">03</span>
-          <div>
-            <h2 class="font-display font-optical-auto text-[clamp(1.5rem,3vw,2.5rem)] font-medium tracking-tight leading-[1.1] transition-colors duration-200 group-hover:text-accent">Performance</h2>
-            <p class="mt-[0.7rem] text-[0.9375rem] leading-[1.65] opacity-65 max-w-[52ch]">
-              Core Web Vitals, loading strategies, render optimisation, and engineering for real-world network conditions and devices.
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section
-      class="animate-rise-5 py-18 px-10 border-b border-subtle desk:px-16"
-      aria-labelledby="services-title"
-    >
-      <p
-        id="services-title"
-        class="text-[0.8125rem] font-semibold tracking-[0.16em] uppercase text-muted"
-      >
-        How we work together
-      </p>
-
-      <div class="grid grid-cols-1 gap-6 mt-12 md:grid-cols-2">
-        <div class="border-[1.5px] border-fg px-9 pt-9 pb-11 transition-colors duration-200 hover:border-accent">
-          <p class="text-xs font-semibold tracking-[0.14em] uppercase text-accent mb-[1.1rem]">
-            Consultancy
-          </p>
-          <h2 class="font-display font-optical-auto text-[1.85rem] font-medium tracking-tight leading-[1.15]">
-            Strategic guidance for your team
-          </h2>
-          <p class="mt-3 text-[0.9375rem] leading-[1.65] opacity-65 max-w-[40ch]">
-            Deep-dive audits, architecture reviews, and sustained partnerships to embed best practices across your org.
-          </p>
-          <a
-            href="mailto:contact@radibit.com"
-            class="inline-block mt-7 text-[0.8125rem] font-semibold tracking-widest uppercase no-underline text-fg border-b-2 border-accent pb-[0.2rem] transition-colors duration-200 hover:text-accent"
-          >
-            Start a conversation →
-          </a>
-        </div>
-
-        <div class="border-[1.5px] border-fg px-9 pt-9 pb-11 transition-colors duration-200 hover:border-accent">
-          <p class="text-xs font-semibold tracking-[0.14em] uppercase text-accent mb-[1.1rem]">
-            Workshops
-          </p>
-          <h2 class="font-display font-optical-auto text-[1.85rem] font-medium tracking-tight leading-[1.15]">
-            Hands-on training that sticks
-          </h2>
-          <p class="mt-3 text-[0.9375rem] leading-[1.65] opacity-65 max-w-[40ch]">
-            Custom sessions on accessibility, performance, and sustainable web development for engineering and product teams.
-          </p>
-          <a
-            href="mailto:contact@radibit.com"
-            class="inline-block mt-7 text-[0.8125rem] font-semibold tracking-widest uppercase no-underline text-fg border-b-2 border-accent pb-[0.2rem] transition-colors duration-200 hover:text-accent"
-          >
-            Book a workshop →
-          </a>
-        </div>
       </div>
     </section>
   </main>
 
-  <footer class="flex flex-wrap justify-between items-center gap-2 py-8 px-10 text-[0.8125rem] text-muted tracking-[0.03em] desk:px-16">
-    <span>© {new Date().getFullYear()} radibit Ltd. All rights reserved.</span>
-    <a href="mailto:contact@radibit.com" class="text-muted no-underline hover:underline">contact@radibit.com</a>
-  </footer>
+  <SiteFooter />
+
+  <script>
+    // Older roles start collapsed; without JS they simply stay visible
+    const more = document.querySelector<HTMLElement>('[data-experience-more]');
+    const toggle = document.querySelector<HTMLButtonElement>('[data-experience-toggle]');
+    const label = document.querySelector('[data-experience-label]');
+
+    if (more && toggle && label) {
+      const count = more.children.length;
+      more.hidden = true;
+      toggle.hidden = false;
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        more.hidden = expanded;
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        label.textContent = expanded ? `Show more (${count})` : 'Show less';
+      });
+    }
+  </script>
 </Layout>

@@ -1,0 +1,38 @@
+---
+import { brands } from '../data/profile';
+---
+
+<section class="border-y border-line py-10" aria-labelledby="brands-title">
+  <div class="shell mb-6">
+    <h2 id="brands-title" class="label-mono text-muted">Brands I’ve worked with</h2>
+  </div>
+
+  <div class="marquee overflow-hidden">
+    <div class="marquee-track motion-loop flex w-max">
+      {
+        // Six copies, shifted by half, keep the loop gapless on wide screens.
+        // Only the first copy is exposed to assistive tech.
+        [0, 1, 2, 3, 4, 5].map((copy) => (
+          <ul
+            class="flex shrink-0 items-center gap-14 pr-14"
+            aria-hidden={copy > 0 ? 'true' : undefined}
+          >
+            {brands.map((brand) => (
+              <li class="shrink-0">
+                <img
+                  src={`/logos/brands/${brand.logo}`}
+                  alt={copy === 0 ? brand.name : ''}
+                  width={brand.width}
+                  height={brand.height}
+                  loading="lazy"
+                  decoding="async"
+                  class="brand-logo h-7 w-auto max-w-44 object-contain opacity-80"
+                />
+              </li>
+            ))}
+          </ul>
+        ))
+      }
+    </div>
+  </div>
+</section>

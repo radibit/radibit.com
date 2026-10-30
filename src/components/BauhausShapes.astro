@@ -1,0 +1,243 @@
+---
+// Hero objects: circle, triangle, square in CSS 3D. Each is a button that
+// plays a synthesized tone (Web Audio, no audio files) and jumps on press.
+const shapes = [
+  { id: 'circle', num: '01', label: 'A11y', name: 'Circle, accessibility' },
+  { id: 'triangle', num: '02', label: 'Perf', name: 'Triangle, performance' },
+  { id: 'square', num: '03', label: 'Sustain', name: 'Square, sustainability' },
+];
+---
+
+<div class="b-stage w-full max-w-105 md:ml-auto" data-b-stage>
+  <div class="b-scene grid grid-cols-3 items-end">
+    {
+      shapes.map((shape) => (
+        <button type="button" class="b-shape" data-shape={shape.id} aria-label={`${shape.name}. Play a tone`}>
+          <span class="b-hit" aria-hidden="true">
+            <span class="b-bob motion-loop block">
+              {shape.id === 'circle' && <span class="b-sphere block" />}
+              {shape.id === 'triangle' && (
+                <span class="b-spin b-spin--reverse motion-loop block">
+                  <span class="b-pyramid block">
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                    <b />
+                  </span>
+                </span>
+              )}
+              {shape.id === 'square' && (
+                <span class="b-spin motion-loop block">
+                  <span class="b-cube block">
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                  </span>
+                </span>
+              )}
+            </span>
+          </span>
+          <span class="b-shadow motion-loop block mb-1" aria-hidden="true" />
+          <span class="b-ripple" aria-hidden="true" />
+        </button>
+      ))
+    }
+  </div>
+
+  <div class="mt-4 grid grid-cols-3 label-mono text-muted" aria-hidden="true">
+    {shapes.map((shape) => <span class="text-center">{shape.num} {shape.label}</span>)}
+  </div>
+
+  <div class="mt-6 flex flex-wrap justify-center gap-2 md:justify-end">
+    <button
+      type="button"
+      class="label-mono rounded-full border border-line px-3 py-[0.45rem] text-muted transition-colors duration-200 hover:bg-surface hover:text-fg aria-pressed:bg-fg aria-pressed:text-bg aria-pressed:border-fg"
+      aria-pressed="true"
+      data-sound-toggle
+    >
+      <span aria-hidden="true">♪</span> Sound
+    </button>
+    <button
+      type="button"
+      class="label-mono rounded-full border border-line px-3 py-[0.45rem] text-muted transition-colors duration-200 hover:bg-surface hover:text-fg aria-pressed:bg-fg aria-pressed:text-bg aria-pressed:border-fg"
+      aria-pressed="false"
+      data-motion-toggle
+    >
+      <span aria-hidden="true">❙❙</span> Pause motion
+    </button>
+  </div>
+</div>
+
+<script>
+  type ShapeId = 'circle' | 'triangle' | 'square';
+
+  const stage = document.querySelector<HTMLElement>('[data-b-stage]');
+  const html = document.documentElement;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  function read(key: string) {
+    try {
+      return localStorage.getItem(key);
+    } catch {
+      return null;
+    }
+  }
+  function write(key: string, value: string | null) {
+    try {
+      if (value === null) localStorage.removeItem(key);
+      else localStorage.setItem(key, value);
+    } catch {
+      // Storage can be blocked; the toggles still work for this visit
+    }
+  }
+
+  // ── Sound ─────────────────────────────────────────
+  // Pentatonic steps so repeated clicks always form a pleasant phrase
+  const VOICES: Record<ShapeId, { wave: OscillatorType; notes: number[]; length: number }> = {
+    circle: { wave: 'sine', notes: [523.25, 587.33, 659.25, 783.99, 880], length: 0.45 },
+    triangle: { wave: 'triangle', notes: [659.25, 783.99, 880, 987.77, 1174.66], length: 0.9 },
+    square: { wave: 'square', notes: [196, 220, 261.63, 293.66, 329.63], length: 0.22 },
+  };
+  const steps: Record<ShapeId, number> = { circle: 0, triangle: 0, square: 0 };
+
+  let soundOn = read('sound') !== 'off';
+  let ctx: AudioContext | null = null;
+
+  function play(id: ShapeId) {
+    if (!soundOn) return;
+    // Created on the first click, as browsers only allow audio after a gesture
+    ctx ??= new AudioContext();
+    if (ctx.state === 'suspended') ctx.resume();
+
+    const voice = VOICES[id];
+    const freq = voice.notes[steps[id] % voice.notes.length];
+    steps[id] += 1;
+
+    const now = ctx.currentTime;
+    const end = now + voice.length;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0.0001, now);
+    gain.gain.exponentialRampToValueAtTime(id === 'square' ? 0.05 : 0.12, now + 0.012);
+    gain.gain.exponentialRampToValueAtTime(0.0001, end);
+
+    let out: AudioNode = gain;
+    if (id === 'square') {
+      // Soften the square wave into a woody knock
+      const filter = ctx.createBiquadFilter();
+      filter.type = 'lowpass';
+      filter.frequency.value = 900;
+      gain.connect(filter);
+      out = filter;
+    }
+    out.connect(ctx.destination);
+
+    const osc = ctx.createOscillator();
+    osc.type = voice.wave;
+    osc.frequency.setValueAtTime(id === 'circle' ? freq * 1.5 : freq, now);
+    if (id === 'circle') osc.frequency.exponentialRampToValueAtTime(freq, now + 0.08);
+    osc.connect(gain);
+    osc.start(now);
+    osc.stop(end + 0.02);
+
+    if (id === 'triangle') {
+      // A quiet octave above makes it ring like a chime
+      const shimmer = ctx.createOscillator();
+      const shimmerGain = ctx.createGain();
+      shimmer.type = 'sine';
+      shimmer.frequency.value = freq * 2;
+      shimmerGain.gain.setValueAtTime(0.0001, now);
+      shimmerGain.gain.exponentialRampToValueAtTime(0.03, now + 0.01);
+      shimmerGain.gain.exponentialRampToValueAtTime(0.0001, end);
+      shimmer.connect(shimmerGain).connect(ctx.destination);
+      shimmer.start(now);
+      shimmer.stop(end + 0.02);
+    }
+  }
+
+  // ── Motion ────────────────────────────────────────
+  const JUMPS: Record<ShapeId, Keyframe[]> = {
+    circle: [
+      { transform: 'translateY(0) scale(1, 1)' },
+      { transform: 'translateY(0) scale(1.18, 0.82)', offset: 0.15 },
+      { transform: 'translateY(-46%) scale(0.92, 1.08)', offset: 0.5 },
+      { transform: 'translateY(0) scale(1.12, 0.88)', offset: 0.85 },
+      { transform: 'translateY(0) scale(1, 1)' },
+    ],
+    triangle: [
+      { transform: 'translateY(0) rotateY(0deg)' },
+      { transform: 'translateY(-40%) rotateY(180deg)', offset: 0.5 },
+      { transform: 'translateY(0) rotateY(360deg)' },
+    ],
+    square: [
+      { transform: 'translateY(0) rotateX(0deg)' },
+      { transform: 'translateY(-38%) rotateX(-180deg)', offset: 0.5 },
+      { transform: 'translateY(0) rotateX(-360deg)' },
+    ],
+  };
+
+  function jump(button: HTMLElement, id: ShapeId) {
+    if (reducedMotion.matches) return;
+    const hit = button.querySelector<HTMLElement>('.b-hit');
+    const ripple = button.querySelector<HTMLElement>('.b-ripple');
+    hit?.animate(JUMPS[id], { duration: 700, easing: 'cubic-bezier(.3,.7,.2,1)' });
+    ripple?.animate(
+      [
+        { opacity: 0.6, transform: 'scale(0.6)' },
+        { opacity: 0, transform: 'scale(1.8)' },
+      ],
+      { duration: 650, delay: 560, easing: 'ease-out' },
+    );
+  }
+
+  stage?.querySelectorAll<HTMLButtonElement>('[data-shape]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const id = button.dataset.shape as ShapeId;
+      play(id);
+      jump(button, id);
+    });
+  });
+
+  // Gentle tilt toward the pointer, desktop pointers only
+  if (stage && window.matchMedia('(pointer: fine)').matches) {
+    window.addEventListener(
+      'pointermove',
+      (event) => {
+        if (reducedMotion.matches || html.dataset.motion === 'paused') return;
+        const x = event.clientX / window.innerWidth - 0.5;
+        const y = event.clientY / window.innerHeight - 0.5;
+        stage.style.setProperty('--tilt-y', `${(x * 14).toFixed(2)}deg`);
+        stage.style.setProperty('--tilt-x', `${(-y * 10).toFixed(2)}deg`);
+      },
+      { passive: true },
+    );
+  }
+
+  // ── Toggles ───────────────────────────────────────
+  const soundToggle = document.querySelector<HTMLButtonElement>('[data-sound-toggle]');
+  function renderSound() {
+    soundToggle?.setAttribute('aria-pressed', String(soundOn));
+  }
+  soundToggle?.addEventListener('click', () => {
+    soundOn = !soundOn;
+    write('sound', soundOn ? null : 'off');
+    renderSound();
+  });
+  renderSound();
+
+  const motionToggle = document.querySelector<HTMLButtonElement>('[data-motion-toggle]');
+  function renderMotion() {
+    motionToggle?.setAttribute('aria-pressed', String(html.dataset.motion === 'paused'));
+  }
+  motionToggle?.addEventListener('click', () => {
+    const paused = html.dataset.motion !== 'paused';
+    if (paused) html.dataset.motion = 'paused';
+    else delete html.dataset.motion;
+    write('motion', paused ? 'paused' : null);
+    renderMotion();
+  });
+  renderMotion();
+</script>

@@ -1,0 +1,38 @@
+---
+// Shared footer: copyright, social profiles and contact
+const links = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/radibit/' },
+  { label: 'GitHub', href: 'https://github.com/radibit' },
+];
+---
+
+<footer class="border-t border-line">
+  <div class="shell flex flex-wrap justify-between items-center gap-x-6 gap-y-3 py-8 text-muted">
+    <span class="label-mono">© {new Date().getFullYear()} radibit Ltd.</span>
+    <ul class="flex flex-wrap items-center gap-x-6 gap-y-2">
+      {
+        links.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer me"
+              class="label-mono text-muted no-underline hover:text-fg hover:underline"
+            >
+              {link.label} <span aria-hidden="true">↗</span>
+              <span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </li>
+        ))
+      }
+      <li>
+        <a
+          href="mailto:contact@radibit.com"
+          class="label-mono text-muted no-underline hover:text-fg hover:underline"
+        >
+          contact@radibit.com
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>

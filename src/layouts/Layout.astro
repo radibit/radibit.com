@@ -2,12 +2,21 @@
 type Props = {
   title: string;
   description?: string;
-}
+  type?: 'website' | 'article';
+  image?: string;
+  imageAlt?: string;
+};
 
 const {
   title,
-  description = 'Web accessibility, performance, and sustainability engineering by Radimir Bitsov.',
+  description = 'Web and mobile engineering that works for everyone: accessibility, performance and sustainability consultancy and workshops by Radimir Bitsov.',
+  type = 'website',
+  image = '/og.png',
+  imageAlt = 'Radimir Bitsov: Accessible. Fast. Sustainable. A circle, a triangle and a square in Bauhaus colors.',
 } = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const imageUrl = new URL(image, Astro.site);
 ---
 
 <!doctype html>
@@ -17,8 +26,30 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+    <meta name="author" content="Radimir Bitsov" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#12130f" media="(prefers-color-scheme: dark)" />
     <title>{title}</title>
+
+    <!-- Sharing previews (Open Graph, used by LinkedIn, Slack, X and others) -->
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content="radibit" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:image:alt" content={imageAlt} />
 
     <!-- No-flash theme detection -->
     <script is:inline>
@@ -26,24 +57,17 @@ const {
         var saved = localStorage.getItem('theme');
         var sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', saved || sys);
+        try {
+          if (localStorage.getItem('motion') === 'paused') {
+            document.documentElement.setAttribute('data-motion', 'paused');
+          }
+        } catch (e) {}
       })();
     </script>
 
-    <!-- Google Fonts: Fraunces + Epilogue (non-blocking) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Epilogue:wght@300;400;500;600&display=swap"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Epilogue:wght@300;400;500;600&display=swap"
-      />
-    </noscript>
+    <!-- Self-hosted fonts: preload the latin files every page uses -->
+    <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/geist-mono-latin.woff2" as="font" type="font/woff2" crossorigin />
   </head>
   <body>
     <slot />

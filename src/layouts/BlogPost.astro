@@ -1,5 +1,6 @@
 ---
 import type { MarkdownLayoutProps } from 'astro';
+import SiteFooter from '../components/SiteFooter.astro';
 import SiteNav from '../components/SiteNav.astro';
 import Layout from './Layout.astro';
 
@@ -12,39 +13,46 @@ const { frontmatter } = Astro.props;
 const { title, external_url } = frontmatter;
 ---
 
-<Layout title={`${title} · radibit`}>
+<Layout title={`${title} · radibit`} type="article">
   <SiteNav />
 
-  <main class="pt-12 px-10 pb-20 desk:px-16">
+  <main class="shell pt-12 pb-24 md:pt-20">
     <article class="max-w-[72ch] mx-auto">
+      <a
+        href="/posts"
+        class="label-mono inline-block text-muted no-underline mb-10 hover:text-fg"
+      >
+        <span aria-hidden="true">←</span> All writing
+      </a>
 
       {external_url ? (
         <div>
-          <h1 class="font-display font-optical-auto text-[clamp(2rem,5vw,3rem)] font-semibold leading-[1.1] tracking-[-0.03em] mb-8">
+          <h1 class="font-display font-light text-[clamp(2.25rem,5.5vw,3.75rem)] leading-[1.05] tracking-[-0.035em] mb-10">
             {title}
           </h1>
 
-          <div class="border-[1.5px] border-fg px-9 py-8 mt-6">
-            <p class="text-[0.75rem] font-semibold tracking-[0.14em] uppercase text-accent mb-4">
+          <div class="rounded-card bg-surface p-8 md:p-10">
+            <p class="label-mono inline-flex items-center gap-2 rounded-full bg-bg border border-line px-3 py-[0.4rem] text-muted mb-6">
+              <span aria-hidden="true" class="block size-[0.4rem] rounded-full bg-accent"></span>
               External article
             </p>
-            <p class="text-base leading-[1.65] opacity-[0.8] mb-6">
-              This post was published externally. Click the link below to read the full article.
+            <p class="text-base leading-[1.65] text-muted mb-8 max-w-[48ch]">
+              This post was published externally. Follow the link below to read the full article.
             </p>
             <a
               href={external_url}
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-block text-[0.75rem] font-semibold tracking-widest uppercase text-bg bg-fg no-underline px-7 py-[0.85rem] transition-opacity duration-200 hover:opacity-75"
+              class="inline-block rounded-full bg-fg text-bg px-6 py-3 text-[0.9375rem] font-medium no-underline transition-opacity duration-200 hover:opacity-80"
             >
-              Read on external site <span aria-hidden="true">→</span>
+              Read on external site <span aria-hidden="true">↗</span>
               <span class="sr-only"> (opens in a new tab)</span>
             </a>
           </div>
         </div>
       ) : (
         <div>
-          <h1 class="font-display font-optical-auto text-[clamp(2rem,5vw,3rem)] font-semibold leading-[1.1] tracking-[-0.03em] mb-10">
+          <h1 class="font-display font-light text-[clamp(2.25rem,5.5vw,3.75rem)] leading-[1.05] tracking-[-0.035em] mb-12 pb-10 border-b border-line">
             {title}
           </h1>
 
@@ -53,12 +61,8 @@ const { title, external_url } = frontmatter;
           </div>
         </div>
       )}
-
     </article>
   </main>
 
-  <footer class="flex flex-wrap justify-between items-center gap-2 py-8 px-10 text-[0.8125rem] text-muted tracking-[0.03em] border-t border-subtle desk:px-16">
-    <span>© {new Date().getFullYear()} radibit Ltd. All rights reserved.</span>
-    <a href="mailto:contact@radibit.com" class="text-muted no-underline hover:underline">contact@radibit.com</a>
-  </footer>
+  <SiteFooter />
 </Layout>
