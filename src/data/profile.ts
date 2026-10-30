@@ -66,6 +66,7 @@ export const experience: Role[] = [
     end: 'Jan 2015',
     title: 'Frontend Developer',
     company: 'Tumba Solutions',
+    url: 'https://www.tumba.solutions/',
     place: 'Sofia',
   },
   {
@@ -73,6 +74,7 @@ export const experience: Role[] = [
     end: 'Oct 2012',
     title: 'Junior Web Developer (ASP.NET, C#)',
     company: 'ICB',
+    url: 'https://www.icb.bg/',
     place: 'Sofia',
   },
 ];
