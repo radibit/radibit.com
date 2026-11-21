@@ -1,4 +1,5 @@
 import type { ImageMetadata } from 'astro';
+import faastingShot from '../assets/projects/faasting.jpg';
 import fydraShot from '../assets/projects/fydra.jpg';
 import hsbShot from '../assets/projects/hsb-sylt.jpg';
 
@@ -148,6 +149,14 @@ export const projects: Project[] = [
   },
   {
     num: '02',
+    kind: 'iPhone app',
+    name: 'Faasting',
+    url: 'https://faasting.app/',
+    body: 'A fasting timer you can feel. Pick your hours, watch the screen fill up and keep the streak. Pay once, no subscription.',
+    image: faastingShot,
+  },
+  {
+    num: '03',
     kind: 'Website',
     name: 'HSB Sylt',
     url: 'https://hsb-sylt.com/',
@@ -155,7 +164,7 @@ export const projects: Project[] = [
     image: hsbShot,
   },
   {
-    num: '03',
+    num: '04',
     kind: 'Coming next',
     name: 'Not announced yet',
     body: 'Still taking shape.',
